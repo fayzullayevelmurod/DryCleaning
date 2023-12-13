@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
+
+input::focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.main_container {
+    max-width: 1232px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import './scss/header';
+@import './scss/footer';
+@import './scss/responsive';
