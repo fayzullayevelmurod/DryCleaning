@@ -1,0 +1,217 @@
+@media only screen and (max-width: 992px) {
+    .main_title {
+        margin-top: 10px;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    .breadcrumbs {
+        li {
+            span {
+                display: none;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .services {
+        .services_cards {
+            margin-top: 32px;
+        }
+
+        .services_card {
+            width: calc(100% / 3 - 16px);   
+        }
+
+        .services_text {
+            margin: 90px 0;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .services_text_left {
+            .services_contact {
+                display: none;
+            }
+        }
+
+        .services_text_right {
+            p {
+                margin-bottom: 20px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            .services_contact {
+                margin-top: 12px;
+                display: block;
+                 
+                a {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+
+                .address {
+                    margin-top: 14px;
+                }
+            }
+        }
+    }
+
+    .error {
+        img {
+            max-width: 100%;
+        }
+        .error_text {
+            p {
+                margin-top: 16px;
+            }
+        }
+    }
+
+    .policy {
+        .main_container {
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 0;
+                margin-top: 20px;
+            }
+
+            .policy_text_first {
+                margin-top: 24px;
+            }
+        }
+    }
+
+    .footer {
+        background-image: url('../images/footer_media_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
+
+        .footer_wrapper {
+            .footer_circle {
+                display: none;
+            }
+    
+            .main_container {
+                flex-direction: column;
+                align-items: start;
+    
+                .footer_menu {
+                    .footer_link {
+                        flex-direction: column;
+                        align-items: start;
+                        gap: 14px;
+                        margin-bottom: 32px;
+                    }
+        
+                    .footer_link_bottom {
+                        display: none;
+                    }
+                }
+    
+                .footer_network {
+                    margin-bottom: 32px;
+                    margin-left: auto;
+                }
+    
+                .footer_media_link {
+                    display: block;
+    
+                    li {
+                        margin-bottom: 14px;
+                        span {
+                            color: rgba(255, 255, 255, 0.44);
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                        }
+    
+                        a {
+                            color: $white;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+
+    .services {
+        .services_cards {
+            gap: 24px;
+        }
+
+        .services_card {
+            width: calc(100% / 2 - 12px);   
+
+            span {
+                margin-top: 16px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .error {
+        margin-top: 92px;
+        margin-bottom: 64px;
+        .main_container {
+            flex-direction: column;
+            margin: 0 16px;
+            padding: 0;
+        }
+        .error_text {
+            padding: 24px 16px 32px 16px;
+            margin-top: 70px;
+            position: static;
+            width: 100%;
+        }
+
+        .main_title {
+            margin-top: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .services {
+        .services_card {
+            width: calc(100%); 
+            
+            img {
+                border-radius: 24px;
+                height: 144px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+// @media only screen and (max-width: 360px) {}

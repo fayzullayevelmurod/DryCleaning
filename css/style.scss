@@ -14,6 +14,7 @@ body {
 $main_color: #062433;
 $main_btn: #FC7327;
 $btn_two: #FBE7DD;
+$white: #FFF;
 
 
 $header_bg: #FDF8F6;
@@ -38,20 +39,276 @@ button {
     margin: 0 auto;
 }
 
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    li {
+        a {
+            color: $main_color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+
+            img {
+                display: none;
+            }
+        }
+
+        span {
+            color: rgba(6, 36, 51, 0.32);
+        }
+    }
+}
+
+.main_title {
+    color: $main_color;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 68px;
+}
 
 
+// services page
+.services {
+    .services_cards {
+        margin-top: 52px;
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 44px 24px;
+    }
 
+    .services_card {
+        width: calc(100% / 4 - 18px);
+        display: flex;
+        flex-direction: column;
 
+        img {
+            width: 100%;
+        }
 
+        span {
+            margin-top: 18px;
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
 
+    .services_text {
+        margin: 120px 0;
+        display: flex;
+        align-items: stretch;
+        gap: 72px;
+    }
 
+    .services_text_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .main_title {
+            max-width: 528px;
+        }
+    }
 
+    .services_text_right {
+        p {
+            max-width: 600px;
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+        
+        .services_list {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
 
+            li {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
 
+        .services_contact {
+            display: none;
+        }
+    }
 
+    .services_contact {
+        li {
+            a {
+                color: $main_color;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+            }
 
+            span {
+                color: rgba(6, 36, 51, 0.32);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+
+        .address {
+            margin-top: 14px;
+        }
+    }
+}
+// services page
+
+// 404 page
+.error {
+    margin-bottom: 161px;
+    .main_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .error_text {
+        width: 640px;
+        position: absolute;
+        bottom: -99px;
+        text-align: center;
+        padding: 32px 16px 52px 16px;
+        border-radius: 24px;
+        background: #FFFEFC;
+        box-shadow: 0px 6px 32px 0px rgba(76, 35, 11, 0.08), 0px 0px 1px 0px rgba(0, 0, 0, 0.24);
+
+        p {
+            max-width: 496px;
+            margin: 32px auto 0 auto;
+            color: rgba(6, 36, 51, 0.72);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+
+            a {
+                color: #FC7327;
+                font-weight: 500;
+            }
+        }
+    }
+}
+// 404 page
+
+// policy page
+.policy {
+    margin-bottom: 100px;
+
+    .main_container {
+        p {
+            max-width: 600px;
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+    }
+}
+// policy page
+
+// footer
+.footer {
+    background-color: $footer_bg;
+    position: relative;
+    padding: 32px 0;
+    
+    .footer_wrapper {
+        .footer_circle {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+        }
+    
+        .main_container {
+            position: relative;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            .footer_menu {
+                .footer_link {
+                    margin-bottom: 24px;
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+    
+                    .footer_item {
+                        color: $white;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+    
+                .footer_link_bottom {
+                    p {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        color: rgba(255, 255, 255, 0.44);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+    
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+    
+            .footer_network {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+    
+                .footer_phone {
+                    color: $white;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+    
+                span {
+                    color: rgba(255, 255, 255, 0.44);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+    
+                .footer_messenger {
+                    margin-top: 16px;
+                    display: flex;
+                    gap: 16px;
+    
+                }
+    
+            }
+    
+            .footer_media_link {
+                display: none;
+            }
+        }
+    }
+}
+// footer
 
 
 @import './scss/header';
-@import './scss/footer';
-@import './scss/responsive';
+@import 'responsive';
