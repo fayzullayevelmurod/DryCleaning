@@ -6,6 +6,11 @@
   text-decoration: none;
 }
 
+body {
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+}
+
 a {
   color: inherit;
 }
@@ -23,4 +28,68 @@ button {
   max-width: 1232px;
   padding: 0 16px;
   margin: 0 auto;
+}
+
+.header .main_container {
+  display: flex;
+  align-items: start;
+}
+.header .main_container .logo {
+  margin-right: 44px;
+}
+.header .main_container .logo .header_logo_media {
+  display: none;
+}
+.header .main_container .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.header .main_container .nav .header_menu {
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #062433;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 18px;
+  background: rgba(72, 60, 51, 0.04);
+}
+.header .main_container .nav .header_select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #062433;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 14px 32px;
+  border-radius: 18px;
+  background: rgba(72, 60, 51, 0.04);
+}
+.header .main_container .nav .header_phone {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+.header .main_container .nav .header_phone .header_phone_in {
+  display: flex;
+  flex-direction: column;
+}
+.header .main_container .nav .header_phone a {
+  color: #062433;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.header .main_container .nav .header_phone a span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer {
+  background-color: #483C33;
 }/*# sourceMappingURL=style.css.map */

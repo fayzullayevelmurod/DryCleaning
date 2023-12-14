@@ -6,6 +6,19 @@
     text-decoration: none;
 }
 
+body {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+}
+// colors
+$main_color: #062433;
+$main_btn: #FC7327;
+$btn_two: #FBE7DD;
+
+
+$header_bg: #FDF8F6;
+$footer_bg: #483C33;
+
 a {
     color: inherit;
 }
@@ -24,7 +37,6 @@ button {
     padding: 0 16px;
     margin: 0 auto;
 }
-
 
 
 
