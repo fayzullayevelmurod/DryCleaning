@@ -24,8 +24,13 @@ a {
     color: inherit;
 }
 
-input::focus {
+body {
+    background-color: #FFFEFC;
+}
+
+input:focus {
     outline: none;
+
 }
 
 button {
@@ -69,6 +74,194 @@ button {
     line-height: 68px;
 }
 
+
+// contact page
+.contact {
+    .main_container{
+        display: flex;
+        align-items: stretch;
+        gap: 52px;
+        margin-bottom: 120px;
+    }
+
+    .contact_left_text {
+        display: none;
+    }
+
+    .contact_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contact_left_in {
+        h6 {
+            margin-top: 32px;
+            color: $main_color;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 36px;
+            margin-bottom: 14px;
+        }
+
+        a {
+            display: block;
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        span {
+            color:rgba(6, 36, 51, 0.32);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .contact_date {
+            display: block;
+            margin-bottom: 14px;
+        }
+    }
+
+    .contact_map {
+        min-height: 566px;
+        max-width: 364px;
+        border-radius: 24px;
+        border: 1px solid #DCCFC6;
+        overflow: hidden;
+        position: relative;
+
+        iframe {
+            height: 100%;
+            min-width: 100%;
+        }
+
+        a {
+            display: none;
+            cursor: pointer;
+            z-index: 2;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: 16px;
+            width: 95%;
+            color: $main_color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            padding: 14px 32px;
+            border-radius: 18px;
+            background: #FBE7DD;
+        }
+    }
+
+    .contact_network {
+        .contact_left_text {
+            max-width: 340px;
+            display: block;
+            color: $main_color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 44px;
+
+            a {
+                color: #5187F1;
+                font-weight: 500;
+            }
+        }
+
+        .contact_network_messenger {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 44px;
+
+            .contact_messanger_btn {
+                padding: 14px 32px;
+                border-radius: 18px;
+                background: #FBE7DD;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                color: $main_color;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            .contact_messanger_btn_right {
+                margin-right: 18px;
+            }
+
+            .contact_messanger_btn_left {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+            }
+        }
+
+        .contact_company_info {
+            border-radius: 24px;
+            background: #FFFEFC;
+            box-shadow: 0px 6px 32px 0px rgba(76, 35, 11, 0.08), 0px 0px 1px 0px rgba(0, 0, 0, 0.24);
+        }
+
+        .contact_company_info_head {
+            padding: 24px 32px;
+            border-bottom: 1px solid #DCCFC6;
+
+            h4 {
+                color: $main_color;
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 36px;
+            }
+
+            p {
+                color: $main_color;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+        
+        ul {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 18px;
+                
+                span {
+                    width: 84px;
+                    text-align: right;
+                    color: rgba(6, 36, 51, 0.32);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                p {
+                    color: $main_color;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+// contact page
 
 // services page
 .services {
@@ -166,6 +359,260 @@ button {
 }
 // services page
 
+// delivery page
+.delivery {
+    .delivery_text {
+        margin: 72px 0 120px 0;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        
+    }
+
+    .delivery_text_left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+            max-width: 600px;
+            color: #062433;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+
+    .delivery_text_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 370px;
+        p {
+            color: rgba(6, 36, 51, 0.32);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+        
+        a {
+            color: #062433;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        span {
+            display: block;
+            color: rgba(6, 36, 51, 0.32);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .delivery_text_right_number {
+            text-align: right;
+        }
+    }
+}
+// delivery page
+
+
+// services-item page
+.services_item {
+    .services_home {
+        position: relative;
+        border-bottom: 14px solid #FBE7DD;
+        background-image: url('../images/services_item_home_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom right;
+
+        .main_container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .services_item_home_img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        h6 {
+            color: rgba(6, 36, 51, 0.32);
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 36px;
+            margin-bottom: 76px;
+        }
+
+        p {
+            max-width: 600px;
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 44px;
+        }
+
+        .services_item_form {
+            margin-bottom: 72px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            input {
+                width: 300px;
+                padding: 14px 24px;
+                color: rgba(6, 36, 51, 0.32);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                border-radius: 18px;
+                border: 1px solid $main_color;
+            }
+
+            button {
+                color: $white;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                padding: 14px 32px;
+                border-radius: 18px;
+                background: $main_btn;
+            }
+        }
+    }
+
+
+    .services_item_info {
+        margin-top: 72px;
+        margin-bottom: 120px;
+
+        .main_container {
+            display: flex;
+            align-items: stretch;
+            gap: 72px;
+        }
+    }
+
+    .services_item_info_text {
+        max-width: 600px;
+        h6 {
+            color: $main_color;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }   
+        
+        .services_item_info_text_bottom {
+            margin-top: 32px;
+        }
+
+        .info_text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        p {
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+
+            a {
+                color: #5187F1;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .services_item_info_link {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .services_item_info_link_block {
+        width: 528px;
+        padding: 24px 24px 24px 32px;
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        border-radius: 24px;
+        box-shadow: 0px 6px 32px 0px rgba(76, 35, 11, 0.08), 0px 0px 1px 0px rgba(0, 0, 0, 0.24);
+
+        p {
+            color: #000;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            
+            span {
+                color: rgba(6, 36, 51, 0.32);
+            }
+        }
+
+        span {
+            color: rgba(6, 36, 51, 0.72);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+
+        a {
+            color: $main_color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            padding: 14px 32px;
+            border-radius: 18px;
+            background: #FBD8C7;
+        }
+
+    }
+
+    .link_block_bottom {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        p {
+            color: $main_color;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 36px;
+            margin-bottom: 14px;
+        }
+
+        a {
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        span {
+            display: block;
+            color: rgba(6, 36, 51, 0.32);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .link_block_number {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+}
+// services-item page
 // 404 page
 .error {
     margin-bottom: 161px;

@@ -15,7 +15,11 @@ a {
   color: inherit;
 }
 
-input::focus {
+body {
+  background-color: #FFFEFC;
+}
+
+input:focus {
   outline: none;
 }
 
@@ -53,6 +57,163 @@ button {
   font-size: 52px;
   font-weight: 500;
   line-height: 68px;
+}
+
+.contact .main_container {
+  display: flex;
+  align-items: stretch;
+  gap: 52px;
+  margin-bottom: 120px;
+}
+.contact .contact_left_text {
+  display: none;
+}
+.contact .contact_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact .contact_left_in h6 {
+  margin-top: 32px;
+  color: #062433;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 14px;
+}
+.contact .contact_left_in a {
+  display: block;
+  color: #062433;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.contact .contact_left_in span {
+  color: rgba(6, 36, 51, 0.32);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contact .contact_left_in .contact_date {
+  display: block;
+  margin-bottom: 14px;
+}
+.contact .contact_map {
+  min-height: 566px;
+  max-width: 364px;
+  border-radius: 24px;
+  border: 1px solid #DCCFC6;
+  overflow: hidden;
+  position: relative;
+}
+.contact .contact_map iframe {
+  height: 100%;
+  min-width: 100%;
+}
+.contact .contact_map a {
+  display: none;
+  cursor: pointer;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 16px;
+  width: 95%;
+  color: #062433;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 14px 32px;
+  border-radius: 18px;
+  background: #FBE7DD;
+}
+.contact .contact_network .contact_left_text {
+  max-width: 340px;
+  display: block;
+  color: #062433;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 44px;
+}
+.contact .contact_network .contact_left_text a {
+  color: #5187F1;
+  font-weight: 500;
+}
+.contact .contact_network .contact_network_messenger {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 44px;
+}
+.contact .contact_network .contact_network_messenger .contact_messanger_btn {
+  padding: 14px 32px;
+  border-radius: 18px;
+  background: #FBE7DD;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #062433;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contact .contact_network .contact_network_messenger .contact_messanger_btn_right {
+  margin-right: 18px;
+}
+.contact .contact_network .contact_network_messenger .contact_messanger_btn_left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.contact .contact_network .contact_company_info {
+  border-radius: 24px;
+  background: #FFFEFC;
+  box-shadow: 0px 6px 32px 0px rgba(76, 35, 11, 0.08), 0px 0px 1px 0px rgba(0, 0, 0, 0.24);
+}
+.contact .contact_network .contact_company_info_head {
+  padding: 24px 32px;
+  border-bottom: 1px solid #DCCFC6;
+}
+.contact .contact_network .contact_company_info_head h4 {
+  color: #062433;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.contact .contact_network .contact_company_info_head p {
+  color: #062433;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contact .contact_network ul {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.contact .contact_network ul li {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.contact .contact_network ul li span {
+  width: 84px;
+  text-align: right;
+  color: rgba(6, 36, 51, 0.32);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contact .contact_network ul li p {
+  color: #062433;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .services .services_cards {
@@ -127,6 +288,217 @@ button {
 }
 .services .services_contact .address {
   margin-top: 14px;
+}
+
+.delivery .delivery_text {
+  margin: 72px 0 120px 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.delivery .delivery_text_left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.delivery .delivery_text_left p {
+  max-width: 600px;
+  color: #062433;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.delivery .delivery_text_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 370px;
+}
+.delivery .delivery_text_right p {
+  color: rgba(6, 36, 51, 0.32);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.delivery .delivery_text_right a {
+  color: #062433;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.delivery .delivery_text_right span {
+  display: block;
+  color: rgba(6, 36, 51, 0.32);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.delivery .delivery_text_right .delivery_text_right_number {
+  text-align: right;
+}
+
+.services_item .services_home {
+  position: relative;
+  border-bottom: 14px solid #FBE7DD;
+  background-image: url("../images/services_item_home_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+.services_item .services_home .main_container {
+  position: relative;
+  z-index: 2;
+}
+.services_item .services_home .services_item_home_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.services_item .services_home h6 {
+  color: rgba(6, 36, 51, 0.32);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 76px;
+}
+.services_item .services_home p {
+  max-width: 600px;
+  color: #062433;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 44px;
+}
+.services_item .services_home .services_item_form {
+  margin-bottom: 72px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.services_item .services_home .services_item_form input {
+  width: 300px;
+  padding: 14px 24px;
+  color: rgba(6, 36, 51, 0.32);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 18px;
+  border: 1px solid #062433;
+}
+.services_item .services_home .services_item_form button {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 14px 32px;
+  border-radius: 18px;
+  background: #FC7327;
+}
+.services_item .services_item_info {
+  margin-top: 72px;
+  margin-bottom: 120px;
+}
+.services_item .services_item_info .main_container {
+  display: flex;
+  align-items: stretch;
+  gap: 72px;
+}
+.services_item .services_item_info_text {
+  max-width: 600px;
+}
+.services_item .services_item_info_text h6 {
+  color: #062433;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+.services_item .services_item_info_text .services_item_info_text_bottom {
+  margin-top: 32px;
+}
+.services_item .services_item_info_text .info_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.services_item .services_item_info_text p {
+  color: #062433;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.services_item .services_item_info_text p a {
+  color: #5187F1;
+  font-weight: 500;
+}
+.services_item .services_item_info_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.services_item .services_item_info_link_block {
+  width: 528px;
+  padding: 24px 24px 24px 32px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  border-radius: 24px;
+  box-shadow: 0px 6px 32px 0px rgba(76, 35, 11, 0.08), 0px 0px 1px 0px rgba(0, 0, 0, 0.24);
+}
+.services_item .services_item_info_link_block p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.services_item .services_item_info_link_block p span {
+  color: rgba(6, 36, 51, 0.32);
+}
+.services_item .services_item_info_link_block span {
+  color: rgba(6, 36, 51, 0.72);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.services_item .services_item_info_link_block a {
+  color: #062433;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 14px 32px;
+  border-radius: 18px;
+  background: #FBD8C7;
+}
+.services_item .link_block_bottom {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.services_item .link_block_bottom p {
+  color: #062433;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 14px;
+}
+.services_item .link_block_bottom a {
+  color: #062433;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.services_item .link_block_bottom span {
+  display: block;
+  color: rgba(6, 36, 51, 0.32);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.services_item .link_block_bottom .link_block_number {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .error {
@@ -301,6 +673,11 @@ button {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 1200px) {
+  .contact .main_container {
+    gap: 30px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .main_title {
     margin-top: 10px;
@@ -308,6 +685,12 @@ button {
     font-style: normal;
     font-weight: 500;
     line-height: 32px;
+  }
+  .breadcrumbs {
+    gap: 0;
+  }
+  .breadcrumbs li .breadcrumbs_index {
+    display: none;
   }
   .breadcrumbs li span {
     display: none;
@@ -319,6 +702,82 @@ button {
   }
   .breadcrumbs li a img {
     display: block;
+  }
+  .contact .main_container {
+    margin-bottom: 90px;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 448px;
+    gap: 52px;
+  }
+  .contact .main_container .contact_left_text {
+    margin-top: 24px;
+    display: block;
+    color: #062433;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .contact .main_container .contact_left_text a {
+    color: #5187F1;
+    font-weight: 500;
+  }
+  .contact .main_container .contact_left_in h6 {
+    margin-top: 24px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .contact .main_container .contact_left_in a {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .contact .main_container .contact_left_in span {
+    display: none;
+  }
+  .contact .main_container .contact_map {
+    max-width: 100%;
+    min-height: 320px;
+  }
+  .contact .main_container .contact_map iframe {
+    position: absolute;
+    width: 100%;
+    max-height: 100% !important;
+    height: 100% !important;
+  }
+  .contact .main_container .contact_map a {
+    display: flex;
+  }
+  .contact .main_container .contact_network .contact_network_messenger {
+    flex-direction: column;
+  }
+  .contact .main_container .contact_network .contact_network_messenger .contact_messanger_btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact .main_container .contact_network .contact_network_messenger .contact_messanger_btn_right {
+    margin-right: 0;
+  }
+  .contact .main_container .contact_company_info ul {
+    padding: 16px;
+  }
+  .contact .main_container .contact_company_info_head {
+    padding: 14px 24px;
+  }
+  .contact .main_container .contact_company_info_head h4 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .contact .main_container .contact_company_info_head p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
   }
   .services .services_cards {
     margin-top: 32px;
@@ -353,6 +812,45 @@ button {
   }
   .services .services_text_right .services_contact .address {
     margin-top: 14px;
+  }
+  .services_item .services_home {
+    background-image: none;
+  }
+  .services_item .services_home h6 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+  .services_item .services_home p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+  .services_item .services_home .services_item_home_img {
+    display: none;
+  }
+  .services_item .services_item_info {
+    margin-bottom: 90px;
+    margin-top: 52px;
+  }
+  .services_item .services_item_info_link {
+    display: none;
+  }
+  .services_item .services_item_info_text {
+    max-width: 100%;
+  }
+  .services_item .services_item_info_text h6 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .services_item .services_item_info_text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
   }
   .error img {
     max-width: 100%;
@@ -428,6 +926,16 @@ button {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
+  }
+  .services_item .services_home .services_item_form {
+    margin-bottom: 52px;
+    flex-direction: column;
+  }
+  .services_item .services_home .services_item_form input {
+    width: 100%;
+  }
+  .services_item .services_home .services_item_form button {
+    width: 100%;
   }
   .error {
     margin-top: 92px;

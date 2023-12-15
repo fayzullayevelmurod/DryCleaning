@@ -1,3 +1,11 @@
+@media only screen and (max-width: 1200px) {
+    .contact {
+        .main_container {
+            gap: 30px;
+        }
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .main_title {
         margin-top: 10px;
@@ -8,7 +16,12 @@
     }
 
     .breadcrumbs {
+        gap: 0;
         li {
+            .breadcrumbs_index {
+                display: none;
+            }
+
             span {
                 display: none;
             }
@@ -21,6 +34,108 @@
                     display: block;
                 }
             }
+        }
+    }
+
+    .contact {
+        .main_container {
+            margin-bottom: 90px;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 448px;
+            gap: 52px;
+
+            .contact_left_text {
+                margin-top: 24px;
+                display: block;
+                color: $main_color;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+    
+                a {
+                    color: #5187F1;
+                    font-weight: 500;
+                }
+            }
+
+
+            .contact_left_in {
+                h6 {
+                    margin-top: 24px;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+
+                a {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+
+            .contact_map {
+                max-width: 100%;
+                min-height: 320px;
+
+                iframe {
+                    position: absolute;
+                    width: 100%;
+                    max-height: 100% !important;
+                    height: 100% !important;
+                }
+
+                a {
+                    display: flex;
+                }
+            }
+
+            .contact_network {
+                .contact_network_messenger {
+                    flex-direction: column;
+
+                    .contact_messanger_btn {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .contact_messanger_btn_right {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .contact_company_info {
+                ul {
+                    padding: 16px;
+                }
+            }
+
+            .contact_company_info_head {
+                padding: 14px 24px;
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+
         }
     }
 
@@ -68,6 +183,57 @@
                 .address {
                     margin-top: 14px;
                 }
+            }
+        }
+    }
+
+    .services_item {
+
+        .services_home {
+            background-image: none;
+
+            h6 {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                margin-bottom: 32px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 32px;
+            }
+
+            .services_item_home_img {
+                display: none;
+            }
+        }
+
+        .services_item_info {
+            margin-bottom: 90px;
+            margin-top: 52px;
+        }
+
+        .services_item_info_link {
+            display: none;
+        }
+
+        .services_item_info_text {
+            max-width: 100%;
+
+            h6 {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
             }
         }
     }
@@ -174,6 +340,23 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 24px;
+            }
+        }
+    }
+
+    .services_item {
+        .services_home {
+            .services_item_form {
+                margin-bottom: 52px;
+                flex-direction: column;
+                
+                input {
+                    width: 100%;
+                }
+
+                button {
+                    width: 100%;
+                }
             }
         }
     }
