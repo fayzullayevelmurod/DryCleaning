@@ -2212,6 +2212,9 @@ button {
   .contact .main_container {
     gap: 30px;
   }
+  .reviews .based_reviews {
+    width: 315px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .main_title {
@@ -2475,6 +2478,9 @@ button {
   .policy .main_container .policy_text_first {
     margin-top: 24px;
   }
+  .reviews .tabs_in {
+    flex-direction: column-reverse;
+  }
   .footer {
     background-image: url("../images/footer_media_bg.png");
     background-repeat: no-repeat;
@@ -2571,6 +2577,9 @@ button {
   .error .main_title {
     margin-top: 0;
   }
+  .reviews .list_group_item {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 576px) {
   .price .price_home img {
@@ -2584,5 +2593,11 @@ button {
     height: 144px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .reviews .tab_right {
+    width: 100%;
+  }
+  .reviews .based_reviews {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -4,6 +4,12 @@
             gap: 30px;
         }
     }
+
+    .reviews {
+        .based_reviews {
+            width: 315px;
+        }
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -363,6 +369,12 @@
         }
     }
 
+    .reviews {
+        .tabs_in {
+            flex-direction: column-reverse;
+        }
+    }
+
     .footer {
         background-image: url('../images/footer_media_bg.png');
         background-repeat: no-repeat;
@@ -488,6 +500,12 @@
             margin-top: 0;
         }
     }
+
+    .reviews {
+        .list_group_item {
+            width: calc(100%);
+        }
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -509,6 +527,16 @@
                 height: 144px;
                 object-fit: cover;
             }
+        }
+    }
+
+    .reviews {
+
+        .tab_right {
+            width: 100%;
+        }
+        .based_reviews {
+            width: 100%;
         }
     }
 }
