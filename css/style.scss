@@ -304,13 +304,23 @@ button {
 .tab {
     &_head {
         margin-bottom: 32px;
+        overflow-x: scroll;
+        padding: 0 16px 1px;
+        width: calc(100% + 32px);
+        transform: translateX(-16px);
+
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         &_in {
             border-radius: 18px;
             border: 1px solid var(--Black-Black-Primary, #062433);
             background: var(--White-White-Primary, #FFF);
-            width: 603px;
+            width: 594px;
             display: flex;
+            justify-content: space-between;
             gap: 4px;
             padding: 4px;
 
@@ -318,6 +328,7 @@ button {
                 border-radius: 16px;
                 padding: 10px 28px;
                 font-weight: 500;
+                white-space: nowrap;
             }
 
             button.active {
@@ -398,6 +409,7 @@ button {
             font-size: 18px;
             font-weight: 400;
             line-height: 28px;
+            text-align: left;
         }
 
         span.icon {
@@ -472,6 +484,109 @@ button {
     }
 }
 
+.comment_card_item {
+    cursor: pointer;
+
+    &__head_wrapper {
+        border-radius: 24px;
+        background: $header_bg;
+        padding: 24px;
+    }
+    
+    &__head {
+        margin-bottom: 14px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        position: relative;
+
+        .user_name {
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        .date {
+            color:  $main_color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .close_modal {
+            display: none;
+            position: absolute;
+            padding: 0;
+            width: 52px;
+            height: 52px;
+            align-items: center;
+            justify-content: center;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    p {
+        color: rgba(6, 36, 51, 0.72);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+
+    .more {
+        color: $main_btn;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    &__foot {
+        display: flex;
+        margin-top: 18px;
+        border-radius: 24px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            left: 0;
+            top: 0;
+        }
+
+        .alert-info {
+            position: relative;
+        }
+
+        .before {
+            position: relative;
+            width: 100px;
+            height: 144px;
+            display: flex;
+            align-items: flex-end;
+            padding: 14px;
+        }
+
+        .after {
+            position: relative;
+            width: 182px;
+            height: 144px;
+            display: flex;
+            align-items: flex-end;
+            padding: 14px;
+        }
+    }
+}
+
 .wrapper {
     width: 100%;
     overflow: hidden;
@@ -512,6 +627,10 @@ button {
         z-index: -1;
     }
 
+    .bg.media {
+        display: none;
+    }
+
     .alert-info {
         margin-bottom: 8px;
     }
@@ -534,6 +653,10 @@ button {
             align-items: center;
             gap: 14px;
             margin-bottom: 18px;
+
+            input {
+                width: 300px;
+            }
         }
     }
 }
@@ -596,6 +719,9 @@ button {
         }
     }
 
+    .home_card_pagination {
+        display: none;
+    }
 
     &_bottom {
         display: flex;
@@ -635,6 +761,7 @@ button {
             padding: 24px;
             display: flex;
             align-items: flex-end;
+            overflow: hidden;
 
             img {
                 position: absolute;
@@ -651,7 +778,7 @@ button {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1250px) {
     .home_card {
         .swiper-wrapper {
             display: flex;
@@ -687,7 +814,7 @@ button {
 
     .main_container {
         position: relative;
-        padding: 64px 0 114px;
+        padding: 64px 16px 114px;
     }
 
     .main_title {
@@ -724,6 +851,7 @@ button {
                 font-size: 18px;
                 font-weight: 500;
                 line-height: 28px;
+                position: relative;
             }
 
             input[type="checkbox"] {
@@ -738,6 +866,7 @@ button {
                 justify-content: center;
                 background: #fff;
                 border-radius: 50%;
+                position: relative;
 
                 img:last-child {
                     display: none;
@@ -797,7 +926,7 @@ button {
         border: 1px solid rgba(0, 0, 0, 0.12);
         background: linear-gradient(180deg, #FD7428 0%, #C65008 100%);
         box-shadow: 0px 8px 24px 0px rgba(76, 35, 11, 0.24);
-        width: 100%;
+        width: calc(100% - 32px);
         transform: translateY(50%);
         padding: 24px 24px 24px 54px;
         display: flex;
@@ -864,6 +993,43 @@ button {
         align-items: center;
         gap: 32px;
         margin-bottom: 32px;
+        justify-content: space-between;
+
+        &_in {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+        }
+    }
+
+    .network {
+        display: flex;
+        align-items: center;
+        border-radius: 18px;
+        background: $header_bg;
+        padding: 8px 18px;
+        gap: 18px;
+
+        .rating {
+            color: rgba(6, 36, 51, 0.32);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        &_item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            span {
+                color: $main_color;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+            }
+        }
     }
 
     &_card {
@@ -871,92 +1037,6 @@ button {
 
         .swiper-slide {
             width: 282px;
-        }
-
-        .card_item {
-
-            &__head_wrapper {
-                border-radius: 24px;
-                background: $header_bg;
-                padding: 24px;
-            }
-            
-            &__head {
-                margin-bottom: 14px;
-                display: flex;
-                align-items: center;
-                gap: 18px;
-
-                .user_name {
-                    color: $main_color;
-                    font-size: 18px;
-                    font-weight: 500;
-                    line-height: 28px;
-                }
-
-                .date {
-                    color:  $main_color;
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 24px;
-                }
-            }
-
-            p {
-                color: rgba(6, 36, 51, 0.72);
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 24px;
-                margin-bottom: 14px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 5;
-                -webkit-box-orient: vertical;
-            }
-
-            .more {
-                color: $main_btn;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 24px;
-            }
-
-            &__foot {
-                display: flex;
-                margin-top: 18px;
-
-                img {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    left: 0;
-                    top: 0;
-                }
-
-                .alert-info {
-                    position: relative;
-                }
-
-                .before {
-                    position: relative;
-                    width: 100px;
-                    height: 144px;
-                    display: flex;
-                    align-items: flex-end;
-                    padding: 14px;
-                }
-
-                .after {
-                    position: relative;
-                    width: 182px;
-                    height: 144px;
-                    display: flex;
-                    align-items: flex-end;
-                    padding: 14px;
-                }
-            }
         }
     }
 
@@ -1016,6 +1096,80 @@ button {
             justify-content: center;
         }
     }
+}
+
+.card_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    &_bg {
+        background: rgba(72, 60, 51, 0.72);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &_content {
+        position: relative;
+
+    }
+
+    .comment_card_item {
+        width: 836px;
+
+        &__head_wrapper {
+            padding: 32px;
+        }
+
+        &__head {
+            margin-bottom: 24px;
+
+            .close_modal {
+                display: flex;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            overflow: visible;
+            text-overflow: none;
+            display: block;
+        }
+
+        a {
+            display: none;
+        }
+
+        &__foot {
+
+            .before {
+                height: 370px;
+                width: 323px;
+            }
+
+            .after {
+                height: 370px;
+                width: calc(100% - 323px);
+            }
+        }
+    }
+}
+
+.card_modal.active {
+    display: flex;
 }
 // Comment end
 
