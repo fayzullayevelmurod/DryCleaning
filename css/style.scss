@@ -359,10 +359,49 @@ button {
 }
 // services page
 
+// price page
+.price {
+    .price_home {
+        display: flex;
+        align-items: end;
+        gap: 72px;
+    }
+
+    .price_home_text {
+        p {
+            max-width: 600px;
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            // color: $main_color;
+            // font-size: 16px;
+            // font-weight: 400;
+            // line-height: 24px;
+            // padding: 14px 32px;
+            // border-radius: 18px;
+            // background: #FBD8C7;
+        }
+    }
+}
+// price page
+
 // delivery page
 .delivery {
+
+    .delivery_text_title {
+        color: $main_color;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+
     .delivery_text {
-        margin: 72px 0 120px 0;
+        margin: 24px 0 120px 0;
         display: flex;
         align-items: stretch;
         justify-content: space-between;
@@ -408,6 +447,9 @@ button {
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
+            text-align: left;
+            margin-left: auto;
+            width: 150px;
         }
 
         .delivery_text_right_number {
@@ -416,7 +458,6 @@ button {
     }
 }
 // delivery page
-
 
 // services-item page
 .services_item {
@@ -613,6 +654,7 @@ button {
 
 }
 // services-item page
+
 // 404 page
 .error {
     margin-bottom: 161px;

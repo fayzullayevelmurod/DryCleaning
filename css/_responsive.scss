@@ -139,6 +139,60 @@
         }
     }
 
+    .price {
+        .price_home {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 32px;
+            
+            p {
+                max-width: 100%;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .delivery {
+
+        .main_title {
+            img {
+                width: 38px;
+                height: 32px;
+            }
+        }
+
+        .delivery_text_title {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        .delivery_text {
+            margin: 20px 0 90px 0;
+            flex-direction: column;
+            gap: 52px;
+        }
+
+        .delivery_text_left {
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+
+        .delivery_text_right {
+            margin-left: auto;
+            a {
+                display: block;
+                margin-top: 20px;
+            }
+            
+        }
+    }
+
     .services {
         .services_cards {
             margin-top: 32px;
@@ -383,6 +437,14 @@
 }
 
 @media only screen and (max-width: 576px) {
+
+    .price {
+        .price_home {
+            img {
+                width: 100%;
+            }
+        }
+    }
 
     .services {
         .services_card {
