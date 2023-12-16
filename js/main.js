@@ -129,29 +129,30 @@ $(document).ready(function () {
         // makeFraction();
     }
 
+    if ($('.comment .comment_card .comment_card_item').length) {
+        $('.comment .comment_card .comment_card_item').click(function () {
+            let el = $(this).clone()[0];
+            $('.card_modal').addClass('active');
+            $('.card_modal .card_modal_content').append($(this).clone());
+            closeModal();
+        })
+    }
+    
     let init = false;
     let home_card_slider;
     let home_card = $('.home_card .cards');
     
     if (home_card) {
         function swiperCard() {
-            if (window.innerWidth <= 992) {
+            if (window.innerWidth <= 1250) {
                 if (!init) {
                     init = true;
                     home_card_slider = new Swiper(".home_card .cards", {
-                        slidesPerView: 1.1,
-                        centeredSlides: true,
-                        spaceBetween: 11,
-                        loop: true,
-                        pagination: {
-                            el: ".home_card_slider_pagination",
-                            clickable: true,
+                        slidesPerView: 'auto',
+                        spaceBetween: 18,
+                        scrollbar: {
+                            el: ".home_card_pagination",
                         },
-                        breakpoints: {
-                            500: {
-                                slidesPerView: 2,
-                            }
-                        }
                     });
                 }
             } else if (init) {
@@ -173,7 +174,10 @@ $(document).ready(function () {
                     init = true;
                     final_price_slider = new Swiper(".final_price .catalog_card", {
                         slidesPerView: 'auto',
-                        spaceBetween: 24,
+                        spaceBetween: 18,
+                        scrollbar: {
+                            el: ".catalog_card__paginate",
+                        },
                     });
                 }
             } else if (init2) {
@@ -206,4 +210,11 @@ function handleCheckbox (el) {
     } else {
         $(el).removeClass('active')
     }
+}
+
+function closeModal () {
+    $('.comment_card_item .close_modal').click(function () {
+        $('.card_modal .card_modal_content .comment_card_item').remove();
+        $('.card_modal').removeClass('active')
+    })
 }

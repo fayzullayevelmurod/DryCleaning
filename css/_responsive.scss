@@ -1,3 +1,42 @@
+@media only screen and (max-width: 1250px) {
+    .home_card {
+        &_top {
+            .cards {
+                overflow: visible;
+            }
+            
+            .swiper-slide {
+                width: 264px;
+            }
+
+            .cards_item {
+                h3 {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                .main-text {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+
+            .cards_item_pink {
+                .main-text {
+                    min-height: 64px;
+                }
+            }
+        }
+
+        .home_card_pagination {
+            display: block;
+            height: 2px;
+            background: rgba(72, 60, 51, 0.04);
+            margin-bottom: 24px;
+        }
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .contact {
         .main_container {
@@ -6,7 +45,51 @@
     }
 }
 
+@media only screen and (min-height: 900px) and (max-width: 992px) {
+    .card_modal {
+        &_content {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
 @media only screen and (max-width: 992px) {
+    .alert-info {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .main-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .sec_title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .accordion {
+        &_head {
+            padding: 16px 20px;
+            gap: 10px;
+
+            span {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        
+        &_body {
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                padding: 0 24px 16px;
+            }
+        }
+    }
+
     .main_title {
         margin-top: 10px;
         font-size: 22px;
@@ -34,6 +117,174 @@
                     display: block;
                 }
             }
+        }
+    }
+
+    #home {
+        .main_title {
+            span {
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 32px;
+                transform: translate(0px, 0px)
+            }
+        }
+    }
+
+    .home_card {
+        &_bottom {
+            flex-direction: column;
+
+            .card_left {
+                width: 100%;
+
+                .main-text {
+                    max-width: 100%;
+
+                    a {
+                        font-style: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            .card_right {
+                width: 100%;
+            }
+        }
+    }
+
+    .final_price {
+        margin: 90px 0 224px;
+
+        .main_container {
+            padding: 44px 16px 170px;
+        }
+
+        .main_title {
+            margin-bottom: 44px;
+        }
+
+        .catalog_card {
+            overflow: visible;
+            margin-bottom: 24px;
+
+            .swiper-slide {
+                width: 200px;
+            }
+
+            &__item {
+                height: 200px;
+
+                &__main_img {
+                    transform: scale(.8) translate(50px, 50px);
+                }
+
+                &:hover {
+                    .catalog_card__item__main_img {
+                        transform: scale(1) translate(50px, 50px);
+                    }
+                }
+            }
+        }
+
+        .catalog_card__paginate {
+            margin-bottom: 24px;
+            height: 2px;
+            background: rgba(72, 60, 51, 0.04);
+        }
+
+        .inputs {
+            flex-direction: column;
+            margin: 0 0 14px;
+
+            .input-dark {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        .checkbox_wrap {
+            margin: 0;
+        }
+
+        .connect {
+            flex-direction: column;
+            padding: 24px 20px 20px;
+            align-items: center;
+
+            &_left {
+                gap: 20px;
+                align-items: flex-start;
+
+                .icon {
+                    .whatsapp {
+                        left: 4px;
+                        top: 30px;
+                    }
+                }
+            }
+
+            &_right {
+                margin-top: 32px;
+                flex-direction: column;
+                width: 100%;
+
+                .btn_orange-light {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .comment {
+        .main_title {
+            margin-top: 0;
+        }
+    }
+
+    .card_modal {
+        &_content {
+            width: calc(100% - 32px);
+            overflow-y: scroll;
+            height: 100vh;
+            padding: 32px 0;
+        }
+
+        .comment_card_item {
+            width: 100%;
+
+            &__head {
+                margin-bottom: 14px;
+            }
+
+            &__foot {
+                flex-direction: column;
+                gap: 14px;
+
+                .before, .after {
+                    width: 100%;
+                    height: 323px;
+                    border-radius: 24px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    .faq {
+        margin: 90px 0 0;
+        padding: 44px 0 90px;
+
+        .main_title {
+            margin-top: 0;
+        }
+
+        .faq_bg {
+            display: none;
         }
     }
 
@@ -378,7 +629,22 @@
 }
 
 @media only screen and (max-width: 768px) {
-    
+    .discount {
+        .main_title {
+            margin-top: 0;
+        }
+
+        &_bg {
+            background-position: left bottom;
+        }
+
+        &_cards {
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            padding-bottom: 52px;
+        }
+    }
 
     .services {
         .services_cards {
@@ -437,6 +703,162 @@
 }
 
 @media only screen and (max-width: 576px) {
+    .comment_card_item {
+        &__head {
+            .user_name {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .date {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 20px; 
+            -webkit-line-clamp: 6;
+        }
+    }
+
+    .tab {
+        &_body {
+            .list_group {
+                a {
+                    padding: 16px 20px;
+                    gap: 10px;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    #home {
+        .main_container {
+            padding-top: 124px;
+        }
+
+        .bg_1, .bg_2, .bg_3 {
+            display: none;
+        }
+
+        .bg {
+            display: none;
+            position: static;
+            width: calc(100% + 32px);
+            transform: translateX(-16px);
+            top: auto;
+            right: auto;
+        }
+
+        .bg.media {
+            display: block;
+        }
+
+        .main_title {
+            margin: 8px 0 28px;
+        }
+
+        .get_price {
+            &__fields {
+                flex-direction: column;
+
+                .input-light {
+                    width: 100%;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                .btn_orange {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .home_card {
+        margin: 0 0 90px;
+        padding: 52px 0;
+
+        &_bottom {
+            .card_left {
+                padding: 24px 32px 32px;
+            }
+
+            .card_right {
+                height: 220px;
+                background: $pink-04;
+
+                img {
+                    bottom: -31px;
+                    left: 45%;
+                }
+            }
+        }
+    }
+
+    .home_price {
+        &__head {
+            justify-content: space-between;
+        }
+    }
+
+    .comment {
+        &_head {
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 24px;
+
+            &_in {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+
+        .network {
+            width: 100%;
+            justify-content: center;
+        }
+
+        &_card_paginate {
+            margin-top: 24px;
+
+            .count {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .discount {
+        .card_item {
+            width: 100%;
+
+            .subtitle {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .title {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &__foot {
+                gap: 14px;
+
+                a {
+                    white-space: nowrap;
+                    padding: 14px;
+                }
+            }
+        }
+    }
 
     .price {
         .price_home {
