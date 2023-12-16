@@ -277,6 +277,7 @@
 
     &__content {
         position: relative;
+        z-index: 10;
         background: var(--Pink-01, #FDF8F6);
         box-shadow: 8px 0px 24px 0px rgba(76, 35, 11, 0.24);
         transition: .2s ease all;

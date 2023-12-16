@@ -62,7 +62,7 @@ button {
 
 .breadcrumbs {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     margin-top: 200px;
     display: flex;
     align-items: center;
@@ -1355,7 +1355,7 @@ button {
 
     .contact_map {
         min-height: 566px;
-        max-width: 364px;
+        min-width: 364px;
         border-radius: 24px;
         border: 1px solid #DCCFC6;
         overflow: hidden;
@@ -1947,6 +1947,19 @@ button {
         line-height: 36px;
     }
 
+    .final_price {
+        position: relative;
+        z-index: 2;
+        margin: 120px 0 0 0 ;
+    }
+    .discount {
+        padding-top: 170px;
+    }
+
+    .home_card_bottom {
+        margin: 72px 0;
+    }
+
     .delivery_text {
         margin: 24px 0 120px 0;
         display: flex;
@@ -2009,24 +2022,23 @@ button {
 // services-item page
 .services_item {
     .services_item_bg {
+        z-index: -1;
         position: absolute;
         top: 52px;
-        width: 100%;
+        right: 0;
+        height: 725px;
+        object-fit: contain;
     }
 
     .services_home {
         position: relative;
         border-bottom: 14px solid #FBE7DD;
 
-        .main_container {
-            position: relative;
-            z-index: 2;
-        }
-
         .services_item_home_img {
             position: absolute;
             bottom: 0;
             right: 0;
+            z-index: -1;
         }
 
         h6 {
@@ -2193,6 +2205,7 @@ button {
 
 // 404 page
 .error {
+    margin-top: 120px;
     margin-bottom: 161px;
     .main_container {
         display: flex;
