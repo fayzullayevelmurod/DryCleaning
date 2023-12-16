@@ -151,6 +151,46 @@
                 font-weight: 400;
                 line-height: 24px;
             }
+
+            .btn_orange-light {
+                width: 100%;
+            }
+        }
+
+        .tab_body {
+            .list_group_title {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                margin-bottom: 24px;
+            }
+
+            .list_group_item {
+                padding: 16px 24px;
+            }
+
+            span {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            .list_group_price {
+                display: flex;
+                align-items: end;
+                flex-direction: column-reverse;
+                b {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+
+                span {
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 14px;
+                }
+            }
         }
     }
 
@@ -242,6 +282,10 @@
     }
 
     .services_item {
+
+        .services_item_bg {
+            display: none;
+        }
 
         .services_home {
             background-image: none;
@@ -379,6 +423,11 @@
 
 @media only screen and (max-width: 768px) {
     
+    .breadcrumbs {
+        position: relative;
+        z-index: 1;
+        margin-top: 86px;
+    }
 
     .services {
         .services_cards {
@@ -403,8 +452,13 @@
             .services_item_form {
                 margin-bottom: 52px;
                 flex-direction: column;
+
+                .input-light {
+                    width: 100%;
+                }
                 
                 input {
+                    display: block;
                     width: 100%;
                 }
 

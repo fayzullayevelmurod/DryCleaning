@@ -13,6 +13,7 @@ $dark-secondary: #25201C;
 
 $label: #E5EBFF;
 
+$pink-01: #FDF8F6;
 $pink-02: #FCF1EC;
 $pink-04: #FBD8C7;
 
@@ -60,6 +61,9 @@ button {
 }
 
 .breadcrumbs {
+    position: relative;
+    z-index: 2;
+    margin-top: 200px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -357,6 +361,22 @@ button {
                     border-bottom: 1px solid $border;
                 }
             }
+
+            .list_group_price {
+                b {
+                    color: $main_color;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+                
+                span {
+                    color: rgba(6, 36, 51, 0.32);
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+            }
         }
     }
 }
@@ -456,7 +476,6 @@ button {
     width: 100%;
     overflow: hidden;
 }
-
 
 // Home 
 #home {
@@ -1422,6 +1441,10 @@ button {
         gap: 72px;
     }
 
+    .main_title {
+        margin-bottom: 32px;
+    }
+
     .price_home_text {
         p {
             max-width: 600px;
@@ -1432,18 +1455,334 @@ button {
             margin-bottom: 20px;
         }
 
-        a {
-            // color: $main_color;
-            // font-size: 16px;
-            // font-weight: 400;
-            // line-height: 24px;
-            // padding: 14px 32px;
-            // border-radius: 18px;
-            // background: #FBD8C7;
+        .btn_orange-light {
+            width: 251px;
+
+            &:hover {
+                background: #FBE7DD;
+            }
+        }
+    }
+
+    .tab_body {
+        margin-top: 100px;
+
+        .list_group_title {
+            color: $main_color;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 36px;
+            margin-bottom: 32px;
+        }
+
+        .list_group {
+            overflow: hidden;
+            border-radius: 18px;
+            border: 1px solid $border;
+        }
+
+        .list_group_item {
+            cursor: default;
+            padding: 28px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            border-bottom: 1px solid $border;
+
+            &:hover {
+                background: $header_bg;
+
+                svg path {
+                    stroke: $main_btn;
+                }
+            }
         }
     }
 }
+
+.additional {
+    .additional_title {
+        color: $main_color;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 36px;
+        margin-bottom: 32px;
+    }
+
+    .additional_tables {
+        overflow: hidden;
+        border-radius: 18px;
+        border: 1px solid $pink-02;
+    }
+
+    .additional_block {
+        display: flex;
+        align-items: center;
+    }
+    
+    .additional_block_left {
+        padding: 28px 0px 28px 32px;
+        border-right: 1px solid $pink-02;
+        flex: 4;
+        display: flex;
+        align-items: center;
+
+        .block_left {
+            flex: 1;
+            max-width: 450px;
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px
+        }
+        
+        span {
+            padding: 14px 0;
+            flex: 1;
+            color:rgba(6, 36, 51, 0.32);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px
+        }
+    }
+
+    .additional_block_right {
+        padding: 28px 32px 28px 0;
+        border-left: 1px solid $pink-02;
+        display: flex;
+        justify-content: end;
+        flex: 1;
+
+        b {
+            color: $main_color;
+            text-align: right;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        span {
+            color: rgba(6, 36, 51, 0.32);
+            text-align: right;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+    
+}
 // price page
+
+// reviews page
+.reviews {
+    .tab {
+        .tab_head_in {
+            width: 448px;
+
+            button {
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .list_group {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 44px 24px;
+        border: none;
+
+        li:not(:last-child) a {
+            border-bottom: none;
+        }
+    }
+
+    .list_pagination {
+        margin-top: 44px;
+        margin-bottom: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+
+        button {
+            width: 52px;
+            height: 52px;
+            border-radius: 18px;
+            color: $main_color;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;  
+            transition: .2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                svg {
+                    path {
+                        stroke: #FC7327;
+                    }
+                }
+            }
+
+            &:active {
+                background: rgba(255, 255, 255, 0.80);
+
+                svg {
+                    path {
+                        stroke: #062433;
+                    }
+                }
+            }
+
+        }
+
+        button.active {
+            border: 1px solid $main_color;
+            color: $main_btn;
+        }
+
+        .left_btn , 
+        .right_btn {
+            border-radius: 18px;
+            background: $pink-01;
+        }
+    }
+
+    .list_group_item {
+        width: calc(100% / 2 - 12px);
+    }
+
+
+    .list_card {
+        // width: 384px;
+        padding: 24px;
+        border-radius: 24px;
+        background: $pink-01;
+    }
+
+    .list_card_head {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        margin-bottom: 14px;
+    }
+
+    .user {
+        display: flex;
+        gap: 18px;
+
+        img {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+        }
+    }
+
+    .user_name {
+        h6 {
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        span {
+            color: $main_color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    .card_text {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        color: rgba(6, 36, 51, 0.72);
+        text-overflow: ellipsis;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 14px;
+    }
+
+    .list_card_btns {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+
+        .list_card_one ,
+        .list_card_two {
+            padding: 0;
+            width: auto;
+            font-size: 16px;
+            line-height: 24px;
+
+        }
+
+        .list_card_one {
+            font-weight: 500;
+            color: $main_btn;
+        }
+
+        .list_card_two {
+            color: rgba(6, 36, 51, 0.72);
+            font-weight: 400;
+        }
+    }
+
+    .tabs_in {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .based_reviews {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 384px;
+        padding: 24px;
+        border-radius: 24px;
+        background: #FFFEFC;
+        box-shadow: 0px 6px 32px 0px rgba(76, 35, 11, 0.08), 0px 0px 1px 0px rgba(0, 0, 0, 0.24);
+
+        span {
+            margin-top: 18px;
+            color: rgba(6, 36, 51, 0.72);
+            text-align: center;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+
+    .based_block {
+        padding: 8px 24px;
+        border-radius: 16px;
+        background: #FDF8F6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px; /* 155.556% */
+        }
+    }
+}
+// reviews page
 
 // delivery page
 .delivery {
@@ -1516,13 +1855,15 @@ button {
 
 // services-item page
 .services_item {
+    .services_item_bg {
+        position: absolute;
+        top: 52px;
+        width: 100%;
+    }
+
     .services_home {
         position: relative;
         border-bottom: 14px solid #FBE7DD;
-        background-image: url('../images/services_item_home_bg.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom right;
 
         .main_container {
             position: relative;
@@ -1560,23 +1901,10 @@ button {
 
             input {
                 width: 300px;
-                padding: 14px 24px;
-                color: rgba(6, 36, 51, 0.32);
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 24px;
-                border-radius: 18px;
-                border: 1px solid $main_color;
             }
 
             button {
-                color: $white;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 24px;
-                padding: 14px 32px;
-                border-radius: 18px;
-                background: $main_btn;
+                width: 198px;
             }
         }
     }
