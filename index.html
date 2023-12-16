@@ -23,19 +23,1088 @@
 
         <!-- header -->
         <header class="header">
+            <div class="main_container">
+                <a href="/" class="logo">
+                    <img class="header_logo_desktop" src="./images/logo/logo_desktop.svg" alt="">
+                    <img class="header_logo_media" src="./images/logo/logo_mobile.svg" alt="">
+                </a>
+                <div class="buttons">
+                    <button class="btn_gray header_menu">
+                        <img src="./images/icons/header_menu.svg" alt="">
+                        <span>Меню</span>
+                    </button>
 
+                    
+                    <div class="header_select_wrap">
+                        <button class="btn_gray header_select">
+                            <img src="./images/icons/header_select.svg" alt="">
+                            <span>Москва</span>
+                        </button>
+                        <div class="header_select_list">
+                            <div class="mobile_header_select">
+                                <span>Выберите город</span>
+                                <button>
+                                    <img src="./images/icons/times.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="list_content">
+                                <button class="active">
+                                    <span>Москва</span>
+                                    <img src="./images/icons/select_icon.svg" alt="">
+                                </button>
+                                <button>
+                                    <span>Химки</span>
+                                    <img src="./images/icons/select_icon.svg" alt="">
+                                </button>
+                                <button>
+                                    <span>Королев</span>
+                                    <img src="./images/icons/select_icon.svg" alt="">
+                                </button>
+                                <button>
+                                    <span>Митино</span>
+                                    <img src="./images/icons/select_icon.svg" alt="">
+                                </button>
+                                <button>
+                                    <span>Долгопрудный</span>
+                                    <img src="./images/icons/select_icon.svg" alt="">
+                                </button>
+                                <button>
+                                    <span>Электросталь</span>
+                                    <img src="./images/icons/select_icon.svg" alt="">
+                                </button>
+                                <button>
+                                    <span>Химки</span>
+                                    <img src="./images/icons/select_icon.svg" alt="">
+                                </button>
+                                <button>
+                                    <span>Королев</span>
+                                    <img src="./images/icons/select_icon.svg" alt="">
+                                </button>
+                                <button>
+                                    <span>Митино</span>
+                                    <img src="./images/icons/select_icon.svg" alt="">
+                                </button>
+                                <button>
+                                    <span>Долгопрудный</span>
+                                    <img src="./images/icons/select_icon.svg" alt="">
+                                </button>
+                                <button>
+                                    <span>Электросталь</span>
+                                    <img src="./images/icons/select_icon.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header_phone">
+                    <div class="header_phone_in">
+                        <a href="tel:+74993980735">
+                            +7 499 398-07-35
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9.09 9C9.3251 8.33167 9.78915 7.76811 10.4 7.40913C11.0108 7.05016 11.7289 6.91894 12.4272 7.03871C13.1255 7.15849 13.7588 7.52152 14.2151 8.06353C14.6713 8.60553 14.9211 9.29152 14.92 10C14.92 12 11.92 13 11.92 13M12 17H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#062433" stroke-opacity="0.32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <span>Перезвоните мне</span>
+                    </div>
+
+                    <div class="header_phone__social_media">
+                        <div class="time">Пн-Вс с 9:00 до 21:00</div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/icons/telegram_icon_dark.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/icons/whatsapp_icon_dark.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/icons/vk_icon_dark.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/icons/pecy_icon_dark.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_blur"></div>
         </header>
+
+        <!-- Menu -->
+        <section class="menu">
+            <div class="menu__bg"></div>
+            <div class="menu__content">
+                <div class="menu__content__top">
+                    <div class="menu__content__head">
+                        <h2>Меню</h2>
+                        <button>
+                            <img src="./images/icons/times.svg" alt="">
+                        </button>
+                    </div>
+                    <ul class="menu__content__top__links">
+                        <li>
+                            <a href="#" class="link">Цены</a>
+                        </li>
+                        <li>
+                            <button class="link open_child">
+                                <span>Услуги</span>
+                                <img src="./images/icons/arrow_right.svg" alt="">
+                            </button>
+                            <ul class="menu__content__top__links__child">
+                                <li>
+                                    <button class="link child_btn">
+                                        <img src="./images/icons/arrow_left.svg" alt="">
+                                        <span>Назад</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">Чистка ковров</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">Чистка ковра в детской</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">Чистка мебели</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">Чистка диванов</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">Чистка штор и тюлей</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">Чистка ковролинов</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">Избавление от запаха кошки</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">Чистка чехлов на диваны</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">Чистка ковров из вискозы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link">Химчистка в районах Москвы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Организациям</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="menu__content__bottom">
+                    <li>
+                        <a href="#">+7 499 398-07-35</a>
+                        <span>Пн-Вс с 9:00 до 21:00</span>
+                    </li>
+                    <li>
+                        <a href="#">г. Москва, ул. Стахановская д. 6с6</a>
+                        <span>Показать на карте</span>
+                    </li>
+                    <li>
+                        <button class="btn_gray header_select">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                                <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="#062433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Москва</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Menu end -->
+
         <!-- header -->
 
+        <!-- Home -->
+        <section id="home">
+            <div class="main_container">
+                <img src="./images/home_ellips_1.png" alt="" class="bg_1">
+                <img src="./images/home_ellips_2.png" alt="" class="bg_2">
+                <img src="./images/home_ellips_3.png" alt="" class="bg_3">
+                <div class="alert-info">Профессиональная химчистка</div>
+                <h1 class="main_title">Фабричная чистка ковров <br> с бесплатной доставкой <br> в обе стороны <span>*</span></h1>
+                <form class="get_price">
+                    <div class="get_price__fields">
+                        <div class="input-light">
+                            <label>Телефон</label>
+                            <input type="tel">
+                        </div>
+                        <button type="submit" class="btn_orange">Узнать стоимость</button>
+                    </div>
+                    <div class="main-text">* В пределах МКАД</div>
+                </form>
+                <img src="./images/index_home_bg.png" class="bg" alt="">
+            </div>
+        </section>
+        <!-- Home end -->
 
+        <!-- Home card -->
+        <section class="home_card">
+            <div class="main_container">
+                <div class="home_card_top">
+                    <div class="swiper cards">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cards_item cards_item_pink">
+                                    <h3>Современное оборудование</h3>
+                                    <div class="main-text">Устраним до 99% всех видов загрязнений.</div>
+                                    <div class="cards_item__foot">
+                                        <img src="./images/icons/home_card_icon_1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cards_item">
+                                    <h3>Гарантия удаления запахов и бережной чистки</h3>
+                                    <div class="main-text">Мы понимаем как, порой, может быть важен ковер.</div>
+                                    <div class="cards_item__foot">
+                                        <img src="./images/icons/home_card_icon_2.svg" alt="">
+                                        <a href="#" class="btn_orange-light">Узнать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cards_item">
+                                    <h3>Фиксированная цена прописанная в договоре</h3>
+                                    <div class="main-text">С нами вы будете уверены, что все пройдет гладко.</div>
+                                    <div class="cards_item__foot">
+                                        <img src="./images/icons/home_card_icon_3.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cards_item">
+                                    <h3>Сначала работа, а оплата после приемки</h3>
+                                    <div class="main-text">Мы работаем всегда, чтобы вы могли насладиться чистотой.</div>
+                                    <div class="cards_item__foot">
+                                        <img src="./images/icons/home_card_icon_4.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="home_card_bottom">
+                    <div class="card_left">
+                        <h2 class="sec_title">Бесплатно заберем ковер и вернем уже чистым</h2>
+                        <p class="main-text">
+                            Заключим договор на чистку и заберем ковер внутри МКАД — бесплатно. Бережно почистим и вернем его в состоянии «Как новый». <a href="#"> Подробнее</a>
+                        </p>
+                    </div>
+                    <div class="card_right">
+                        <img src="./images/home_card_right_person.png" alt="">
+                        <div class="alert-info">Доставка — Бесплатно</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Home card end -->
 
+        <!-- Home price -->
+        <section class="home_price">
+            <div class="main_container">
+                <div class="home_price__head">
+                    <h2 class="main_title">Цены</h2>
+                    <a href="#">
+                        <img src="./images/icons/chevron_right.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- tab -->
+                <div class="tab">
+                    <!-- tab head -->
+                    <div class="tab_head">
+                        <div class="tab_head_in">
+                            <button class="main-text active">Ковры и паласы</button>
+                            <button class="main-text">Мебель</button>
+                            <button class="main-text">Матрасы</button>
+                            <button class="main-text">Шторы и тюли</button>
+                        </div>
+                    </div>
+
+                    <!-- tab body -->
+                    <div class="tab_body">
+                        <!-- Ковры и паласы -->
+                        <ul class="list_group">
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка синтетических ковров</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка шерстяных ковров</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка ковров из вискозы</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка ковров из хлопка или шёлка</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Дополнительно</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <!-- Мебель -->
+                        <ul class="list_group">
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка синтетических ковров 2</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка шерстяных ковров 2</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка ковров из вискозы 2</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка ковров из хлопка или шёлка 2</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Дополнительно 2</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Матрасы -->
+                        <ul class="list_group">
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка синтетических ковров 3</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка шерстяных ковров 3</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка ковров из вискозы 3</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка ковров из хлопка или шёлка 3</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Дополнительно 3</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Шторы и тюли -->
+                        <ul class="list_group">
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка синтетических ковров 4</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка шерстяных ковров 4</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка ковров из вискозы 4</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Химчистка ковров из хлопка или шёлка 4</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list_group_item">
+                                <a href="#">
+                                    <span>Дополнительно 4</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- tab end -->
+            </div>
+        </section>
+        <!-- Home price end -->
+
+        <!-- Final price -->
+        <section class="final_price">
+            <div class="main_container">
+                <h2 class="main_title">Узнайте итоговую стоимость уже сейчас</h2>
+
+                <form>
+                    <div class="swiper catalog_card">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="catalog_card__item">
+                                    <img src="./images/catalog_card_1.png" alt="" class="catalog_card__item__main_img">
+                                    <label>Ковры и паласы</label>
+                                    <input type="checkbox" checked="true">
+                                    <div class="icon">
+                                        <img src="./images/icons/check_box.svg" alt="">
+                                        <img src="./images/icons/check_box_active.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="catalog_card__item">
+                                    <img src="./images/catalog_card_2.png" alt="" class="catalog_card__item__main_img">
+                                    <label>Мебель</label>
+                                    <input type="checkbox">
+                                    <div class="icon">
+                                        <img src="./images/icons/check_box.svg" alt="">
+                                        <img src="./images/icons/check_box_active.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="catalog_card__item">
+                                    <img src="./images/catalog_card_3.png" alt="" class="catalog_card__item__main_img">
+                                    <label>Матрасы</label>
+                                    <input type="checkbox">
+                                    <div class="icon">
+                                        <img src="./images/icons/check_box.svg" alt="">
+                                        <img src="./images/icons/check_box_active.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="catalog_card__item">
+                                    <img src="./images/catalog_card_4.png" alt="" class="catalog_card__item__main_img">
+                                    <label>Шторы и тюли</label>
+                                    <input type="checkbox">
+                                    <div class="icon">
+                                        <img src="./images/icons/check_box.svg" alt="">
+                                        <img src="./images/icons/check_box_active.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inputs">
+                        <div class="input-dark">
+                            <label>Имя</label>
+                            <input type="tel">
+                        </div>
+                        <div class="input-dark">
+                            <label>Телефон</label>
+                            <input type="tel">
+                        </div>
+                        <button type="submit" class="btn_orange">Рассчитать</button>
+                    </div>
+
+                    <div class="checkbox_wrap">
+                        <div class="checkbox">
+                            <img src="./images/icons/check_box.svg" alt="">
+                            <img src="./images/icons/check_box_active.svg" alt="">
+                            <input type="checkbox" checked="true">
+                            <span>Даю согласие на <a href="#">обработку персональных данных</a></span>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="connect">
+                    <div class="connect_left">
+                        <div class="icon">
+                            <img src="./images/icons/telegram_origin.svg" alt="">
+                            <img class="whatsapp" src="./images/icons/whatsapp_origin.svg" alt="">
+                        </div>
+                        <h3>
+                            Или отправьте фото сразу в мессенджере
+                            <span>Мы зададим пару вопросов и назовем конечную цену.</span>
+                        </h3>
+                    </div>
+                    <div class="connect_right">
+                        <a href="#" class="btn_orange-light">
+                            <span>Telegram</span>
+                            <img src="./images/icons/telegram_icon_dark.svg" alt="">
+                        </a>
+                        <a href="#" class="btn_orange-light">
+                            <span>WhatsApp</span>
+                            <img src="./images/icons/whatsapp_icon_dark.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Final price end -->
+
+        <!-- Comment -->
+        <section class="comment">
+            <div class="main_container">
+                <div class="comment_head">
+                    <h2 class="main_title">Отзывы</h2>
+                    <a href="#">
+                        <img src="./images/icons/chevron_right.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper comment_card">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card_item">
+                                <div class="card_item__head_wrapper">
+                                    <div class="card_item__head">
+                                        <img src="./images/user_avatar.png" alt="">
+                                        <div class="data">
+                                            <div class="user_name">Илья</div>
+                                            <div class="date">15.11.2022</div>
+                                        </div>
+                                    </div>
+                                    <p>К моему великому удивлению, компания работает очень оперативно))Буквально за пару дней, они забрали ковры, сделали качественную химчистку и привезли их и все это за весьма приемлимую цену!</p>
+                                    <a href="#" class="more">Читать</a>
+                                </div>
+                                <div class="card_item__foot">
+                                    <div class="before">
+                                        <img src="./images/comment_card_1_1.png" alt="">
+                                        <div class="alert-info">До</div>
+                                    </div>
+                                    <div class="after">
+                                        <img src="./images/comment_card_1_2.png" alt="">
+                                        <div class="alert-info">После</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card_item">
+                                <div class="card_item__head_wrapper">
+                                    <div class="card_item__head">
+                                        <img src="./images/user_avatar.png" alt="">
+                                        <div class="data">
+                                            <div class="user_name">Диана</div>
+                                            <div class="date">15.11.2022</div>
+                                        </div>
+                                    </div>
+                                    <p>В своём стремлении улучшить пользовательский опыт мы упускаем, что сторонники тоталитаризма в науке представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
+                                    <a href="#" class="more">Читать</a>
+                                </div>
+                                <div class="card_item__foot">
+                                    <div class="before">
+                                        <img src="./images/comment_card_2_1.png" alt="">
+                                        <div class="alert-info">До</div>
+                                    </div>
+                                    <div class="after">
+                                        <img src="./images/comment_card_2_2.png" alt="">
+                                        <div class="alert-info">После</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card_item">
+                                <div class="card_item__head_wrapper">
+                                    <div class="card_item__head">
+                                        <img src="./images/user_avatar.png" alt="">
+                                        <div class="data">
+                                            <div class="user_name">Нина</div>
+                                            <div class="date">15.11.2022</div>
+                                        </div>
+                                    </div>
+                                    <p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности не оставляет шанса для кластеризации усилий.</p>
+                                    <a href="#" class="more">Читать</a>
+                                </div>
+                                <div class="card_item__foot">
+                                    <div class="before">
+                                        <img src="./images/comment_card_3_1.png" alt="">
+                                        <div class="alert-info">До</div>
+                                    </div>
+                                    <div class="after">
+                                        <img src="./images/comment_card_3_2.png" alt="">
+                                        <div class="alert-info">После</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card_item">
+                                <div class="card_item__head_wrapper">
+                                    <div class="card_item__head">
+                                        <img src="./images/user_avatar.png" alt="">
+                                        <div class="data">
+                                            <div class="user_name">Никита</div>
+                                            <div class="date">15.11.2022</div>
+                                        </div>
+                                    </div>
+                                    <p>Вот вам яркий пример современных тенденций — семантический разбор внешних противодействий играет определяющее значение для новых предложений.</p>
+                                    <a href="#" class="more">Читать</a>
+                                </div>
+                                <div class="card_item__foot">
+                                    <div class="before">
+                                        <img src="./images/comment_card_4_1.png" alt="">
+                                        <div class="alert-info">До</div>
+                                    </div>
+                                    <div class="after">
+                                        <img src="./images/comment_card_4_2.png" alt="">
+                                        <div class="alert-info">После</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card_item">
+                                <div class="card_item__head_wrapper">
+                                    <div class="card_item__head">
+                                        <img src="./images/user_avatar.png" alt="">
+                                        <div class="data">
+                                            <div class="user_name">Илья</div>
+                                            <div class="date">15.11.2022</div>
+                                        </div>
+                                    </div>
+                                    <p>К моему великому удивлению, компания работает очень оперативно))Буквально за пару дней, они забрали ковры, сделали качественную химчистку и привезли их и все это за весьма приемлимую цену!</p>
+                                    <a href="#" class="more">Читать</a>
+                                </div>
+                                <div class="card_item__foot">
+                                    <div class="before">
+                                        <img src="./images/comment_card_1_1.png" alt="">
+                                        <div class="alert-info">До</div>
+                                    </div>
+                                    <div class="after">
+                                        <img src="./images/comment_card_1_2.png" alt="">
+                                        <div class="alert-info">После</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card_item">
+                                <div class="card_item__head_wrapper">
+                                    <div class="card_item__head">
+                                        <img src="./images/user_avatar.png" alt="">
+                                        <div class="data">
+                                            <div class="user_name">Диана</div>
+                                            <div class="date">15.11.2022</div>
+                                        </div>
+                                    </div>
+                                    <p>В своём стремлении улучшить пользовательский опыт мы упускаем, что сторонники тоталитаризма в науке представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
+                                    <a href="#" class="more">Читать</a>
+                                </div>
+                                <div class="card_item__foot">
+                                    <div class="before">
+                                        <img src="./images/comment_card_2_1.png" alt="">
+                                        <div class="alert-info">До</div>
+                                    </div>
+                                    <div class="after">
+                                        <img src="./images/comment_card_2_2.png" alt="">
+                                        <div class="alert-info">После</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card_item">
+                                <div class="card_item__head_wrapper">
+                                    <div class="card_item__head">
+                                        <img src="./images/user_avatar.png" alt="">
+                                        <div class="data">
+                                            <div class="user_name">Нина</div>
+                                            <div class="date">15.11.2022</div>
+                                        </div>
+                                    </div>
+                                    <p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности не оставляет шанса для кластеризации усилий.</p>
+                                    <a href="#" class="more">Читать</a>
+                                </div>
+                                <div class="card_item__foot">
+                                    <div class="before">
+                                        <img src="./images/comment_card_3_1.png" alt="">
+                                        <div class="alert-info">До</div>
+                                    </div>
+                                    <div class="after">
+                                        <img src="./images/comment_card_3_2.png" alt="">
+                                        <div class="alert-info">После</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card_item">
+                                <div class="card_item__head_wrapper">
+                                    <div class="card_item__head">
+                                        <img src="./images/user_avatar.png" alt="">
+                                        <div class="data">
+                                            <div class="user_name">Никита</div>
+                                            <div class="date">15.11.2022</div>
+                                        </div>
+                                    </div>
+                                    <p>Вот вам яркий пример современных тенденций — семантический разбор внешних противодействий играет определяющее значение для новых предложений.</p>
+                                    <a href="#" class="more">Читать</a>
+                                </div>
+                                <div class="card_item__foot">
+                                    <div class="before">
+                                        <img src="./images/comment_card_4_1.png" alt="">
+                                        <div class="alert-info">До</div>
+                                    </div>
+                                    <div class="after">
+                                        <img src="./images/comment_card_4_2.png" alt="">
+                                        <div class="alert-info">После</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment_card_paginate">
+                    <button class="prev_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                            <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="#062433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="count">4/24</div>
+                    <button class="next_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                            <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="#062433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Comment end -->
+
+        <!-- FAQ -->
+        <section class="faq">
+            <img src="./images/faq_bg_1.png" alt="" class="faq_main_bg">
+            <div class="main_container">
+                <div class="faq_in">
+                    <h2 class="main_title">Частые вопросы</h2>
+                    <div class="accordion">
+                        <button class="accordion_head">
+                            <span>Чем чистка на фабрике лучше выезда на дом?</span>
+                            <span class="icon">
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#062433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <img src="./images/icons/accordion_close.svg" alt="">
+                            </span>
+                        </button>
+                        <div class="accordion_body">
+                            <p>Вывоз вашего ковра на фабрику позволяет провести полный комплекс очистки, недоступный в домашних условиях. Машинное очищение от пыли, чистка, озонирование и работа над вашим ковром сразу нескольких специалистов делают разницу на порядки </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button class="accordion_head">
+                            <span>Сколько времени уйдёт на весь процесс?</span>
+                            <span class="icon">
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#062433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <img src="./images/icons/accordion_close.svg" alt="">
+                            </span>
+                        </button>
+                        <div class="accordion_body">
+                            <p>Вывоз вашего ковра на фабрику позволяет провести полный комплекс очистки, недоступный в домашних условиях. Машинное очищение от пыли, чистка, озонирование и работа над вашим ковром сразу нескольких специалистов делают разницу на порядки </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button class="accordion_head">
+                            <span>Какие средства вы используете?</span>
+                            <span class="icon">
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#062433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <img src="./images/icons/accordion_close.svg" alt="">
+                            </span>
+                        </button>
+                        <div class="accordion_body">
+                            <p>Вывоз вашего ковра на фабрику позволяет провести полный комплекс очистки, недоступный в домашних условиях. Машинное очищение от пыли, чистка, озонирование и работа над вашим ковром сразу нескольких специалистов делают разницу на порядки </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button class="accordion_head">
+                            <span>Что если ковер испортится?</span>
+                            <span class="icon">
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#062433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <img src="./images/icons/accordion_close.svg" alt="">
+                            </span>
+                        </button>
+                        <div class="accordion_body">
+                            <p>Вывоз вашего ковра на фабрику позволяет провести полный комплекс очистки, недоступный в домашних условиях. Машинное очищение от пыли, чистка, озонирование и работа над вашим ковром сразу нескольких специалистов делают разницу на порядки </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button class="accordion_head">
+                            <span>В какой момент происходит оплата?</span>
+                            <span class="icon">
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#062433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <img src="./images/icons/accordion_close.svg" alt="">
+                            </span>
+                        </button>
+                        <div class="accordion_body">
+                            <p>Вывоз вашего ковра на фабрику позволяет провести полный комплекс очистки, недоступный в домашних условиях. Машинное очищение от пыли, чистка, озонирование и работа над вашим ковром сразу нескольких специалистов делают разницу на порядки </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button class="accordion_head">
+                            <span>От чего зависит цена?</span>
+                            <span class="icon">
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#062433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <img src="./images/icons/accordion_close.svg" alt="">
+                            </span>
+                        </button>
+                        <div class="accordion_body">
+                            <p>Вывоз вашего ковра на фабрику позволяет провести полный комплекс очистки, недоступный в домашних условиях. Машинное очищение от пыли, чистка, озонирование и работа над вашим ковром сразу нескольких специалистов делают разницу на порядки </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button class="accordion_head">
+                            <span>Сколько стоит химчистка ковра?</span>
+                            <span class="icon">
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#062433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <img src="./images/icons/accordion_close.svg" alt="">
+                            </span>
+                        </button>
+                        <div class="accordion_body">
+                            <p>Вывоз вашего ковра на фабрику позволяет провести полный комплекс очистки, недоступный в домашних условиях. Машинное очищение от пыли, чистка, озонирование и работа над вашим ковром сразу нескольких специалистов делают разницу на порядки </p>
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/faq_bg.png" class="faq_bg" alt="">
+            </div>
+        </section>
+        <!-- FAQ end -->
+
+        <!-- Discount -->
+        <section class="discount">
+            <img src="./images/discount_bg_1.png" alt="" class="discount_bg_1">
+            <div class="discount_bg"></div>
+            <div class="main_container">
+                <h2 class="main_title">Получите <span>Скидку 15%</span></h2>
+                <h3 class="sec_title">если привезете ковер сами</h3>
+                <div class="discount_cards">
+                    <div class="card_item">
+                        <div class="subtitle">Мы находимся по адресу:</div>
+                        <a href="#" class="title">г. Москва, ул. Стахановская д. 6с6</a>
+                        <div class="card_item__foot">
+                            <img src="./images/icons/location_icon.svg" alt="">
+                            <a href="#" class="btn_orange-light">Показать на карте</a>
+                        </div>
+                    </div>
+                    <div class="card_item">
+                        <div class="subtitle">Позвоните заранее, чтобы узнать цену:</div>
+                        <a href="#" class="title">+7 499 398-07-35</a>
+                        <div class="card_item__foot">
+                            <img src="./images/icons/location_icon.svg" alt="">
+                            <a href="#" class="btn_orange-light">Перезвоните мне</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Discount end -->
 
         <!-- footer -->
         <footer class="footer">
-
+            <div class="main_container">
+                <div class="footer_left">
+                    <ul class="footer_link">
+                        <li class="footer_item">
+                            <a href="#">
+                                Цены
+                            </a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">
+                                Доставка
+                            </a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">
+                                Организациям
+                            </a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer_link_bottom">
+                        <p>
+                            <span>
+                                ©2023
+                            </span>
+                            <span>|</span>
+                            <span>
+                                ИП Лесных Артем Викторович
+                            </span>
+                            <span>|</span>
+                            <a href="#">
+                                Обработка персональных данных
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer_network">
+                    <a href="#">
+                        <a href="tel:+74993980735">
+                            +7 499 398-07-35
+                        </a>
+                    </a>
+                    <span>
+                        ladia.carpets@gmail.com
+                    </span>
+                    <span>
+                        г. Москва, ул. Стахановская д. 6с6
+                    </span>
+                    <div class="footer_messenger">
+                        <a href="#">
+                            <img src="./images/icons/vk_icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/pecy_icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/telegram_icon.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/whatsapp_icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- footer -->
+
+        <!-- list content background -->
+        <div class="list_content_bg"></div>
 
         <!-- jquery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
