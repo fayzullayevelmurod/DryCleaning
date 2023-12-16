@@ -51,12 +51,19 @@
     }
 }
 
-@media only screen and (min-height: 900px) and (max-width: 992px) {
+@media only screen and (min-height: 1200px) and (max-width: 992px) {
+    .card_modal {
+        &_content {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-height: 1200px) and (max-width: 992px) {
     .card_modal {
         &_content {
             overflow-y: scroll;
-            display: flex;
-            align-items: center;
 
             &::-webkit-scrollbar {
                 display: none;

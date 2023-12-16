@@ -2374,11 +2374,15 @@ button {
     width: 315px;
   }
 }
-@media only screen and (min-height: 900px) and (max-width: 992px) {
+@media only screen and (min-height: 1200px) and (max-width: 992px) {
   .card_modal_content {
-    overflow-y: scroll;
     display: flex;
     align-items: center;
+  }
+}
+@media only screen and (max-height: 1200px) and (max-width: 992px) {
+  .card_modal_content {
+    overflow-y: scroll;
   }
   .card_modal_content::-webkit-scrollbar {
     display: none;
