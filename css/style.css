@@ -3209,7 +3209,7 @@ button {
     line-height: 24px;
   }
   .reviews .list_card_wrapper_in {
-    gap: 44px 24px !important;
+    gap: 32px 24px !important;
   }
   .reviews .list_card_wrapper {
     width: calc(33.3333333333% - 16px);
