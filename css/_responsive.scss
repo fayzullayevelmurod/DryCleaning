@@ -687,6 +687,10 @@
             }
         }
 
+        .list_pagination {
+            margin-bottom: 0;
+        }
+
         .card_text {
             font-size: 14px;
             line-height: 20px;
@@ -694,6 +698,44 @@
 
         .list_group {
             gap: 32px 0;
+        }
+
+        .services_text {
+            margin: 90px 0;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .services_text_left {
+            .services_contact {
+                display: none;
+            }
+        }
+
+        .services_text_right {
+            p {
+                margin-bottom: 20px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            .services_contact {
+                margin-top: 12px;
+                display: block;
+                 
+                a {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+
+                .address {
+                    margin-top: 14px;
+                }
+            }
         }
     }
 

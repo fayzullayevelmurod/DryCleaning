@@ -3076,12 +3076,43 @@ button {
     font-size: 14px;
     line-height: 20px;
   }
+  .reviews .list_pagination {
+    margin-bottom: 0;
+  }
   .reviews .card_text {
     font-size: 14px;
     line-height: 20px;
   }
   .reviews .list_group {
     gap: 32px 0;
+  }
+  .reviews .services_text {
+    margin: 90px 0;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .reviews .services_text_left .services_contact {
+    display: none;
+  }
+  .reviews .services_text_right p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .reviews .services_text_right .services_contact {
+    margin-top: 12px;
+    display: block;
+  }
+  .reviews .services_text_right .services_contact a {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  .reviews .services_text_right .services_contact .address {
+    margin-top: 14px;
   }
   .business .services_item_info {
     margin-top: 52px;
