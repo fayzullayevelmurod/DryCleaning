@@ -1095,7 +1095,7 @@ button {
 .contact .contact_map a {
   display: none;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1;
   align-items: center;
   justify-content: center;
   position: absolute;
