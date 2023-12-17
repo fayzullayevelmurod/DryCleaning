@@ -1390,6 +1390,7 @@ button {
 }
 
 .reviews .tab .tab_head_in {
+  margin-top: 24px;
   width: 448px;
 }
 .reviews .tab .tab_head_in button {
@@ -1549,6 +1550,57 @@ button {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px; /* 155.556% */
+}
+.reviews .services_text {
+  margin: 120px 0;
+  display: flex;
+  align-items: stretch;
+  gap: 72px;
+}
+.reviews .services_text_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.reviews .services_text_left .main_title {
+  max-width: 528px;
+}
+.reviews .services_text_right p {
+  max-width: 600px;
+  color: #062433;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.reviews .services_text_right .services_list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.reviews .services_text_right .services_list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.reviews .services_text_right .services_contact {
+  display: none;
+}
+.reviews .services_contact li a {
+  color: #062433;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.reviews .services_contact li span {
+  color: rgba(6, 36, 51, 0.32);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.reviews .services_contact .address {
+  margin-top: 14px;
 }
 
 .delivery .delivery_text_title {
@@ -3011,6 +3063,25 @@ button {
   }
   .reviews .tabs_in {
     flex-direction: column-reverse;
+  }
+  .reviews .based_block p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .reviews .user_name h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .reviews .user_name span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .reviews .card_text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .reviews .list_group {
+    gap: 32px 0;
   }
   .business .services_item_info {
     margin-top: 52px;
