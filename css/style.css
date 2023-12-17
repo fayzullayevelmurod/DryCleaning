@@ -1775,7 +1775,6 @@ button {
   margin-top: 18px;
 }
 .business .business_home .main_container {
-  margin: 0 16px;
   background-color: #FCF1EC;
   overflow: hidden;
   border-radius: 24px 0 24px 24px;
@@ -2530,6 +2529,11 @@ button {
   .menu__content__bottom li a {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+@media only screen and (max-width: 1260px) {
+  .business .business_home {
+    margin: 16px 16px 0 16px;
   }
 }
 @media only screen and (max-width: 1250px) {
