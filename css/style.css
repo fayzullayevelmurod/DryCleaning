@@ -1379,6 +1379,57 @@ button {
 .price .tab_body .list_group_item:hover svg path {
   stroke: #FC7327;
 }
+.price .services_text {
+  margin: 120px 0;
+  display: flex;
+  align-items: stretch;
+  gap: 72px;
+}
+.price .services_text_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.price .services_text_left .main_title {
+  max-width: 528px;
+}
+.price .services_text_right p {
+  max-width: 600px;
+  color: #062433;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.price .services_text_right .services_list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.price .services_text_right .services_list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.price .services_text_right .services_contact {
+  display: none;
+}
+.price .services_contact li a {
+  color: #062433;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.price .services_contact li span {
+  color: rgba(6, 36, 51, 0.32);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.price .services_contact .address {
+  margin-top: 14px;
+}
 
 .additional .additional_title {
   color: #062433;
@@ -1499,6 +1550,16 @@ button {
 }
 .reviews .list_group_item {
   width: calc(50% - 12px);
+}
+.reviews .list_card_wrapper {
+  width: calc(25% - 20px);
+}
+.reviews .list_card_wrapper a {
+  padding: 0;
+  color: #FC7327;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 }
 .reviews .list_card {
   padding: 24px;
@@ -2982,6 +3043,34 @@ button {
     font-weight: 400;
     line-height: 14px;
   }
+  .price .services_text {
+    margin: 90px 0;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .price .services_text_left .services_contact {
+    display: none;
+  }
+  .price .services_text_right p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .price .services_text_right .services_contact {
+    margin-top: 12px;
+    display: block;
+  }
+  .price .services_text_right .services_contact a {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  .price .services_text_right .services_contact .address {
+    margin-top: 14px;
+  }
   .delivery .final_price {
     margin: 90px 0 0 0;
   }
@@ -3119,6 +3208,12 @@ button {
     font-size: 16px;
     line-height: 24px;
   }
+  .reviews .list_card_wrapper_in {
+    gap: 44px 24px !important;
+  }
+  .reviews .list_card_wrapper {
+    width: calc(33.3333333333% - 16px);
+  }
   .reviews .user_name h6 {
     font-size: 16px;
     line-height: 24px;
@@ -3164,6 +3259,12 @@ button {
   }
   .reviews .services_text_right .services_contact .address {
     margin-top: 14px;
+  }
+  .comment_card_item__foot .before {
+    flex: 1;
+  }
+  .comment_card_item__foot .after {
+    flex: 2;
   }
   .about .services_text {
     margin: 90px 0;
@@ -3495,5 +3596,8 @@ button {
   }
   .reviews .based_reviews {
     width: 100%;
+  }
+  .reviews .list_card_wrapper a {
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */

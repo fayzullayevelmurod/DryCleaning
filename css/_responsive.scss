@@ -482,6 +482,44 @@
                 }
             }
         }
+
+        .services_text {
+            margin: 90px 0;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .services_text_left {
+            .services_contact {
+                display: none;
+            }
+        }
+
+        .services_text_right {
+            p {
+                margin-bottom: 20px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            .services_contact {
+                margin-top: 12px;
+                display: block;
+                 
+                a {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+
+                .address {
+                    margin-top: 14px;
+                }
+            }
+        }
     }
 
     .delivery {
@@ -675,6 +713,14 @@
             }
         }
 
+        .list_card_wrapper_in {
+            gap: 44px 24px !important;
+        }
+
+        .list_card_wrapper {
+            width: calc(100% / 3 - 16px);
+        }
+
         .user_name {
             h6 {
                 font-size: 16px;
@@ -736,6 +782,16 @@
                     margin-top: 14px;
                 }
             }
+        }
+    }
+
+    .comment_card_item__foot {
+        .before {
+            flex: 1;
+        }
+
+        .after {
+            flex: 2;
         }
     }
     
@@ -1202,6 +1258,12 @@
         }
         .based_reviews {
             width: 100%;
+        }
+
+        .list_card_wrapper {
+            a {
+                padding: 0;
+            }
         }
     }
 }
