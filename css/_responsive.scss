@@ -661,6 +661,96 @@
         }
     }
 
+    .business {
+
+        .services_item_info  {
+            margin-top: 52px;
+            margin-bottom: 90px;
+            .main_container {
+                display: block;
+            }
+        }
+
+        .services_item_info_text {
+            max-width: 100%;
+        }
+
+        .link_block_bottom {
+            display: none;
+        }
+
+        .business_home {
+            .main_container {
+                border-radius: 24px;
+                background-image: url('../images/busines_mobile_home_bg.png');
+                flex-direction: column;
+                // background-color: transparent;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+
+            .services_item_form {
+                flex-direction: column;
+                align-items: start;
+
+                .input-light, button {
+                    width: 100%;
+                }
+            }
+
+            .business_home_left {
+                padding: 0;
+
+                p {
+                    margin: 24px 0 32px 0;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+
+            .business_home_right {
+                width: 100%;
+                display: flex;
+                justify-content: end;
+                .business_desktop {
+                    display: none;
+                }
+
+                .business_mobile {
+                    transform: translateX(16px);
+                    margin-left: auto;
+                    display: block;
+                }
+            }
+
+        }
+
+        .services_item_info_text {
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            h6 {
+                margin-top: 32px;
+                margin-bottom: 0;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+            }
+
+            ul {
+                li {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+        }
+    } 
+
     .footer {
         background-image: url('../images/footer_media_bg.png');
         background-repeat: no-repeat;
