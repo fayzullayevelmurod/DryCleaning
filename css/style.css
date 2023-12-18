@@ -899,6 +899,11 @@ button {
   margin-bottom: 32px;
   justify-content: space-between;
 }
+.comment_head_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .comment_head_in {
   display: flex;
   align-items: center;
@@ -1602,6 +1607,11 @@ button {
 
 .reviews .tab .tab_head {
   margin-top: 32px;
+}
+.reviews .tab .tab_head_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .reviews .tab .tab_head_in {
   width: 448px;

@@ -1123,6 +1123,12 @@ button {
 // Comment 
 .comment {
     &_head {
+        &_wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
         display: flex;
         align-items: center;
         gap: 32px;
@@ -2004,7 +2010,14 @@ button {
 .reviews {
     .tab {
 
+        
         .tab_head {
+            &_wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
             margin-top: 32px;
         }
 
