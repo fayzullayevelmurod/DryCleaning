@@ -1375,8 +1375,19 @@ button {
   display: flex;
   flex-direction: column;
 }
-.services .services_card img {
+.services .services_card .services_img {
+  border-radius: 24px;
+  height: 272px;
+  overflow: hidden;
+}
+.services .services_card .services_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.2s ease;
   width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
 }
 .services .services_card span {
   margin-top: 18px;
@@ -1384,6 +1395,9 @@ button {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
+}
+.services .services_card:hover .services_img img {
+  transform: scale(1.2);
 }
 .services .services_text {
   margin: 120px 0;
@@ -1673,6 +1687,9 @@ button {
 }
 .reviews .list_card_wrapper {
   width: calc(25% - 20px);
+}
+.reviews .list_card_wrapper .comment_card_item {
+  cursor: auto;
 }
 .reviews .list_card_wrapper a {
   padding: 0;
@@ -2328,6 +2345,12 @@ button {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
+}
+.footer .footer_wrapper .main_container .footer_network .footer_mail {
+  color: rgba(255, 255, 255, 0.44);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 .footer .footer_wrapper .main_container .footer_network span {
   color: rgba(255, 255, 255, 0.44);
@@ -3590,10 +3613,10 @@ button {
   .reviews .list_group_item {
     width: 100%;
   }
-  .tab .tab_head {
-    align-items: start;
+  .tab .tab_head_wrap {
+    align-items: start !important;
     flex-direction: column;
-    gap: 24px;
+    margin-bottom: 32px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -3710,7 +3733,10 @@ button {
   .services .services_card {
     width: 100%;
   }
-  .services .services_card img {
+  .services .services_card .services_img {
+    height: auto;
+  }
+  .services .services_card .services_img img {
     border-radius: 24px;
     height: 144px;
     -o-object-fit: cover;
@@ -3725,7 +3751,7 @@ button {
   .reviews .list_card_wrapper a {
     padding: 0;
   }
-  .tab .tab_head .select2_example {
+  .tab .tab_head_wrap .select2_example {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

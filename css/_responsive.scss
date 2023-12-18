@@ -1073,10 +1073,10 @@
     }
 
     .tab {
-        .tab_head {
-            align-items: start;
+        .tab_head_wrap {
+            align-items: start !important;
             flex-direction: column;
-            gap: 24px;
+            margin-bottom: 32px;
         }
     }
 }
@@ -1251,10 +1251,13 @@
         .services_card {
             width: calc(100%); 
             
-            img {
-                border-radius: 24px;
-                height: 144px;
-                object-fit: cover;
+            .services_img {
+                height: auto;
+                img {
+                    border-radius: 24px;
+                    height: 144px;
+                    object-fit: cover;
+                }
             }
         }
     }
@@ -1276,7 +1279,7 @@
     }
 
     .tab {
-        .tab_head {
+        .tab_head_wrap {
             .select2_example {
                 width: 100%;
             }
