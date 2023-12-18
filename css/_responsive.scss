@@ -888,6 +888,30 @@
         }
     }
 
+    .trust {
+        .social_network {
+            max-width: 100%;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .main_title {
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 32px;
+            max-width: 100%;
+        }
+
+        &_card {
+            display: none;
+        }
+    }
+
     .business {
 
         .services_item_info  {

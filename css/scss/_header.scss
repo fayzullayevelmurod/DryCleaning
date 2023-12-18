@@ -17,14 +17,14 @@
         position: absolute;
         left: 0;
         width: 100%;
-        z-index: 1;
+        z-index: 5;
         background: var(--01-transition, linear-gradient(180deg, #FCF7F4 0%, rgba(250, 247, 245, 0.00) 100%));
     }
     
     .logo {
         min-width: 220px;
         position: relative;
-        z-index: 2;
+        z-index: 7;
 
         .header_logo_desktop {
             position: absolute;
@@ -49,13 +49,13 @@
     .header_menu {
         width: calc(100% - 255px);
         position: relative;
-        z-index: 1;
+        z-index: 5;
     }
 
     .header_select {
         width: 264px;
         position: relative;
-        z-index: 2;
+        z-index: 7;
     }
 
     .mobile_header_select {
@@ -67,7 +67,7 @@
     }
 
     .header_select_wrap.active {
-        z-index: 4;
+        z-index: 9;
         
         .header_select {
             border-radius: 18px;
@@ -160,13 +160,13 @@
         width: 182px;
         flex-shrink: 0;
         position: relative;
-        z-index: 2;
+        z-index: 7;
 
         .header_phone_in {
             display: flex;
             flex-direction: column;
             position: relative;
-            z-index: 1;
+            z-index: 5;
 
             a {
                 color: $main_color;
@@ -199,7 +199,7 @@
 
         svg {
             position: relative;
-            z-index: 1;
+            z-index: 5;
         }
 
         &__social_media {
@@ -252,7 +252,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: 8;
     background: var(--Overlay, rgba(72, 60, 51, 0.72));
 }
 
@@ -264,7 +264,7 @@
     width: 100%;
     height: 100%;
     display: none;
-    z-index: 2;
+    z-index: 7;
 
     &__bg {
         position: absolute;
@@ -277,7 +277,7 @@
 
     &__content {
         position: relative;
-        z-index: 10;
+        z-index: 16;
         background: var(--Pink-01, #FDF8F6);
         box-shadow: 8px 0px 24px 0px rgba(76, 35, 11, 0.24);
         transition: .2s ease all;
