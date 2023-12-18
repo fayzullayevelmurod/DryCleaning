@@ -70,6 +70,13 @@
             width: 315px;
         }
     }
+
+    
+    .about_home {
+        p {
+            max-width: 450px;
+        }
+    }
 }
 
 @media only screen and (min-height: 1200px) and (max-width: 992px) {
@@ -800,6 +807,48 @@
     }
     
     .about {
+        &_home {
+            .main_container {
+                overflow: hidden;
+            }
+
+            .bg_1, .bg_2 {
+                display: none;
+            }
+
+            .main_title {
+                margin-bottom: 24px;
+            }
+
+            p {
+                max-width: 100%;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                padding-bottom: 24px;
+            }
+
+            .for_video {
+                position: static;
+                width: 512px;
+                margin: 0 auto;
+
+                &_bg {
+                    height: 256px;
+                    width: 512px;
+                    object-fit: cover;
+                    object-position: top;
+                }
+
+                .play {
+                    top: 132px;
+                    left: 200px;
+                    transform: translate(0);
+                }
+            }
+        }
+
         .services_text {
             margin: 90px 0;
             flex-direction: column;
@@ -836,6 +885,30 @@
                     margin-top: 14px;
                 }
             }
+        }
+    }
+
+    .trust {
+        .social_network {
+            max-width: 100%;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .main_title {
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 32px;
+            max-width: 100%;
+        }
+
+        &_card {
+            display: none;
         }
     }
 

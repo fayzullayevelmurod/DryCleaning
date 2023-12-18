@@ -793,7 +793,6 @@ button {
 }
 // Home end
 
-
 // Home card
 .home_card {
     background: $header_bg;
@@ -1445,6 +1444,67 @@ button {
 
 // about page
 .about {
+    &_home {
+        .main_container {
+            position: relative;
+        }
+
+        .bg_1 {
+            position: absolute;
+            top: -90px;
+            left: 187px;
+            z-index: -1;
+        }
+
+        .bg_2 {
+            position: absolute;
+            left: 390px;
+            top: -210px;
+            z-index: -1;
+        }
+
+        .main_title {
+            margin-bottom: 200px;
+        }
+
+        p {
+            max-width: 600px;
+            color: #000;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            padding-bottom: 52px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .for_video {
+            position: absolute;
+            right: -375px;
+            bottom: 0;
+
+            &_in {
+                position: relative;
+            }
+            
+            &_bg {
+                position: relative;
+                z-index: -1;
+            }
+
+            .play {
+                position: absolute;
+                top: 413px;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        &_card {
+            margin-top: 0 !important;
+        }
+    }
+
     .services_text {
         margin: 120px 0;
         display: flex;
@@ -1508,6 +1568,164 @@ button {
 
         .address {
             margin-top: 14px;
+        }
+    }
+}
+
+.trust {
+    .main_container {
+        position: relative;
+    }
+
+    .social_network {
+        max-width: 300px;
+        margin: 0 auto 32px;
+        border-radius: 18px;
+        background: $pink-01;
+        display: flex;
+        align-items: center;
+        padding: 8px 18px;
+        position: relative;
+        z-index: 2;
+
+        .network_title {
+            color: var(--Black-Black-Tertiary, rgba(6, 36, 51, 0.32));
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        img {
+            margin-left: 18px;
+        }
+
+        span {
+            display: block;
+            color: $main_color;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            margin-left: 8px;
+        }
+    }
+    
+    .main_title {
+        text-align: center;
+        margin-bottom: 32px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .description {
+        max-width: 600px;
+        margin: 0 auto 44px;
+        color: $main_color;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .btn_orange {
+        width: 177px;
+        margin: 0 auto;
+    }
+
+    .card_item {
+        width: 384px;
+        border-radius: 24px;
+        background: $pink-01;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        position: absolute;
+        user-select: none;
+
+        &:nth-child(1) {
+            top: 0;
+            left: -187px;
+            z-index: 1;
+        }
+
+        &:nth-child(2) {
+            left: 26px;
+            top: 193px;
+            z-index: 0;
+            opacity: 0.2;
+        }
+
+        &:nth-child(3) {
+            top: 0;
+            right: -74px;
+            z-index: 0;
+            opacity: 0.2;
+        }
+
+        &:nth-child(4) {
+            z-index: 1;
+            top: 228px;
+            right: -227px;
+        }
+
+        &_head {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .avatar {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+
+            .name {
+                color: $main_color;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+            }
+
+            .date {
+                color: $main_color;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px; 
+            }
+        }
+
+        .stars {
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            color: var(--Black-Black-Secondary, rgba(6, 36, 51, 0.72));
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+        }
+
+        &_foot {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            color: var(--Black-Black-Secondary, rgba(6, 36, 51, 0.72));
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+
+            a:first-child {
+                color: $main_btn;
+                font-weight: 500;
+            }
         }
     }
 }
