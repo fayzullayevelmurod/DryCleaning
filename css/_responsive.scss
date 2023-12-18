@@ -1071,6 +1071,14 @@
             width: calc(100%);
         }
     }
+
+    .tab {
+        .tab_head {
+            align-items: start;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1263,6 +1271,14 @@
         .list_card_wrapper {
             a {
                 padding: 0;
+            }
+        }
+    }
+
+    .tab {
+        .tab_head {
+            .select2_example {
+                width: 100%;
             }
         }
     }

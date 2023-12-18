@@ -17,6 +17,25 @@ $(document).ready(function () {
         $('.menu').removeClass('noActive').addClass('active')
     })
 
+    $('.select2_example select').select2({
+        placeholder: "Сортировка",
+        minimumResultsForSearch: -1,
+        width: 'resolve',
+        templateResult: function(e) {
+            val = e.element;
+            if(val){
+                val = `${val.text} <img src="./images/icons/select_icon.svg" alt="">`;
+            }
+            return val;
+        },
+        escapeMarkup: function(m) {
+            return m;
+        }
+    });
+    
+    $('b[role="presentation"]').hide();
+    $('.select2_example .select2-selection__arrow').html('<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="#062433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 1.5L6 6.5L11 1.5" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+
     $('.menu .menu__content__head button').click(function () {
         $('.menu').removeClass('active').addClass('noActive')
         setTimeout(() => {
@@ -196,6 +215,9 @@ $(document).ready(function () {
             swiperCard();
         }
     });
+
+
+
 })
 
 function checkValid (el) {
@@ -218,3 +240,4 @@ function closeModal () {
         $('.card_modal').removeClass('active')
     })
 }
+
