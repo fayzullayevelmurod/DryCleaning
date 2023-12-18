@@ -13,6 +13,9 @@
     <!-- swiper slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- swiper slider -->
+    <!-- select -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- select -->
     <!-- main style -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- main style -->
@@ -236,7 +239,6 @@
             </div>
         </section>
         <!-- Menu end -->
-
         <!-- header -->
 
         <!-- breadcrumbs -->
@@ -300,279 +302,1100 @@
                     <!-- tab body -->
                     <div class="tab_body">
                         <!-- Ковры и паласы -->
-                        <h3 class="list_group_title">
-                            Химчистка синтетических ковров
-                        </h3>
-                        <ul class="list_group">
-                            <li class="list_group_item">
-                                <span>
-                                    Ворс менее 2 см
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        480₽
-                                    </b>
+                        <div class="tab_item">
+                            <h3 class="list_group_title">
+                                Химчистка синтетических ковров
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        Ворс менее 2 см
                                     </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    На клееной основе
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        500₽
-                                    </b>
+                                    <div class="list_group_price">
+                                        <b>
+                                            480₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        На клееной основе
                                     </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    Shaggy (длинный ворс)
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        600₽
-                                    </b>
+                                    <div class="list_group_price">
+                                        <b>
+                                            500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        Shaggy (длинный ворс)
                                     </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    Shaggy (на клееной основе)
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        1 325₽
-                                    </b>
+                                    <div class="list_group_price">
+                                        <b>
+                                            600₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        Shaggy (на клееной основе)
                                     </span>
-                                </div>
-                            </li>
-                        </ul>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1 325₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <h3 class="list_group_title">
+                                Химчистка шерстяных ковров
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <span>
+                                        Ворс менее 2 см
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Ворс более 2 см
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            675₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        На клееной основе
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1460₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Shaggy (длинный ворс)
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            750₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Shaggy (на клееной основе)
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1490₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Ковры ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1450₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Вьетнамские ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            790₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Китайские ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            790₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Килим/сумах
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            790₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <h3 class="list_group_title">
+                                Химчистка ковров из вискозы
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <span>
+                                        Ковры из вискозы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            12500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        На клееной основе
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            2 190₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="list_group_title">
+                                Химчистка ковров из хлопка или шёлка
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <span>
+                                        Ворс менее 2 см
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            2500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        На клееной основе
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            1800₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Ковры ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            3 990₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Гобелен
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            990₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                         
                         <!-- Мебель -->
-                        <h3 class="list_group_title">
-                            Химчистка шерстяных ковров
-                        </h3>
-                        <ul class="list_group">
-                            <li class="list_group_item">
-                                <span>
-                                    Ворс менее 2 см
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        500₽
-                                    </b>
+                        <div class="tab_item">
+                            <h3 class="list_group_title">
+                                Химчистка синтетических ковров 2
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        Ворс менее 2 см
                                     </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    Ворс более 2 см
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        675₽
-                                    </b>
+                                    <div class="list_group_price">
+                                        <b>
+                                            480₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        На клееной основе
                                     </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    На клееной основе
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        1460₽
-                                    </b>
+                                    <div class="list_group_price">
+                                        <b>
+                                            500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        Shaggy (длинный ворс)
                                     </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    Shaggy (длинный ворс)
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        750₽
-                                    </b>
+                                    <div class="list_group_price">
+                                        <b>
+                                            600₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        Shaggy (на клееной основе)
                                     </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    Shaggy (на клееной основе)
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        1490₽
-                                    </b>
-                                    <span>
-                                        /м2
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    Ковры ручной работы
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        1450₽
-                                    </b>
-                                    <span>
-                                        /м2
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    Вьетнамские ручной работы
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        790₽
-                                    </b>
-                                    <span>
-                                        /м2
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    Китайские ручной работы
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        790₽
-                                    </b>
-                                    <span>
-                                        /м2
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    Килим/сумах
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        790₽
-                                    </b>
-                                    <span>
-                                        /м2
-                                    </span>
-                                </div>
-                            </li>
-                        </ul>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1 325₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
 
+                            <h3 class="list_group_title">
+                                Химчистка шерстяных ковров
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <span>
+                                        Ворс менее 2 см
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Ворс более 2 см
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            675₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        На клееной основе
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1460₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Shaggy (длинный ворс)
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            750₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Shaggy (на клееной основе)
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1490₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Ковры ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1450₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Вьетнамские ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            790₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Китайские ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            790₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Килим/сумах
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            790₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <h3 class="list_group_title">
+                                Химчистка ковров из вискозы
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <span>
+                                        Ковры из вискозы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            12500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        На клееной основе
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            2 190₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="list_group_title">
+                                Химчистка ковров из хлопка или шёлка
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <span>
+                                        Ворс менее 2 см
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            2500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        На клееной основе
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            1800₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Ковры ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            3 990₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Гобелен
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            990₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
                         <!-- Матрасы -->
-                        <h3 class="list_group_title">
-                            Химчистка ковров из вискозы
-                        </h3>
-                        <ul class="list_group">
-                            <li class="list_group_item">
-                                <span>
-                                    Ковры из вискозы
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        12500₽
-                                    </b>
+                        <div class="tab_item">
+                            <h3 class="list_group_title">
+                                Химчистка синтетических ковров 3
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        Ворс менее 2 см
                                     </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    На клееной основе
-                                </span>
-                                <div class="list_group_price">
-                                    <b> 
-                                        2 190₽
-                                    </b>
+                                    <div class="list_group_price">
+                                        <b>
+                                            480₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        На клееной основе
                                     </span>
-                                </div>
-                            </li>
-                        </ul>
+                                    <div class="list_group_price">
+                                        <b>
+                                            500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Shaggy (длинный ворс)
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            600₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Shaggy (на клееной основе)
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1 325₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
 
+                            <h3 class="list_group_title">
+                                Химчистка шерстяных ковров
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <span>
+                                        Ворс менее 2 см
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Ворс более 2 см
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            675₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        На клееной основе
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1460₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Shaggy (длинный ворс)
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            750₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Shaggy (на клееной основе)
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1490₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Ковры ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1450₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Вьетнамские ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            790₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Китайские ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            790₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Килим/сумах
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            790₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <h3 class="list_group_title">
+                                Химчистка ковров из вискозы
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <span>
+                                        Ковры из вискозы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            12500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        На клееной основе
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            2 190₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="list_group_title">
+                                Химчистка ковров из хлопка или шёлка
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <span>
+                                        Ворс менее 2 см
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            2500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        На клееной основе
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            1800₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Ковры ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            3 990₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Гобелен
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            990₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
                         <!-- Шторы и тюли -->
-                        <h3 class="list_group_title">
-                            Химчистка ковров из хлопка или шёлка
-                        </h3>
-                        <ul class="list_group">
-                            <li class="list_group_item">
-                                <span>
-                                    Ворс менее 2 см
-                                </span>
-                                <div class="list_group_price">
-                                    <b>
-                                        2500₽
-                                    </b>
+                        <div class="tab_item">
+                            <h3 class="list_group_title">
+                                Химчистка синтетических ковров 4
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        Ворс менее 2 см
                                     </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    На клееной основе
-                                </span>
-                                <div class="list_group_price">
-                                    <b> 
-                                        1800₽
-                                    </b>
+                                    <div class="list_group_price">
+                                        <b>
+                                            480₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        На клееной основе
                                     </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    Ковры ручной работы
-                                </span>
-                                <div class="list_group_price">
-                                    <b> 
-                                        3 990₽
-                                    </b>
+                                    <div class="list_group_price">
+                                        <b>
+                                            500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        Shaggy (длинный ворс)
                                     </span>
-                                </div>
-                            </li>
-                            <li class="list_group_item">
-                                <span>
-                                    Гобелен
-                                </span>
-                                <div class="list_group_price">
-                                    <b> 
-                                        990₽
-                                    </b>
+                                    <div class="list_group_price">
+                                        <b>
+                                            600₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
                                     <span>
-                                        /м2
+                                        Shaggy (на клееной основе)
                                     </span>
-                                </div>
-                            </li>
-                        </ul>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1 325₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <h3 class="list_group_title">
+                                Химчистка шерстяных ковров
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <span>
+                                        Ворс менее 2 см
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Ворс более 2 см
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            675₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        На клееной основе
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1460₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Shaggy (длинный ворс)
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            750₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Shaggy (на клееной основе)
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1490₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Ковры ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            1450₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Вьетнамские ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            790₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Китайские ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            790₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Килим/сумах
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            790₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <h3 class="list_group_title">
+                                Химчистка ковров из вискозы
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <span>
+                                        Ковры из вискозы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            12500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        На клееной основе
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            2 190₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="list_group_title">
+                                Химчистка ковров из хлопка или шёлка
+                            </h3>
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <span>
+                                        Ворс менее 2 см
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b>
+                                            2500₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        На клееной основе
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            1800₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Ковры ручной работы
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            3 990₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_group_item">
+                                    <span>
+                                        Гобелен
+                                    </span>
+                                    <div class="list_group_price">
+                                        <b> 
+                                            990₽
+                                        </b>
+                                        <span>
+                                            /м2
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
                     </div>
                 </div>
@@ -968,6 +1791,9 @@
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- swiper -->
+    <!-- select -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <!-- select -->
     <!-- main js -->
     <script src="./js/main.js"></script>
     <!-- main js -->

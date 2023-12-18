@@ -13,6 +13,9 @@
     <!-- swiper slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- swiper slider -->
+    <!-- select -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- select -->
     <!-- main style -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- main style -->
@@ -352,180 +355,188 @@
                     <!-- tab body -->
                     <div class="tab_body">
                         <!-- Ковры и паласы -->
-                        <ul class="list_group">
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка синтетических ковров</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка шерстяных ковров</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка ковров из вискозы</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка ковров из хлопка или шёлка</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Дополнительно</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="tab_item">
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка синтетических ковров</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка шерстяных ковров</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка ковров из вискозы</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка ковров из хлопка или шёлка</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Дополнительно</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         
                         <!-- Мебель -->
-                        <ul class="list_group">
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка синтетических ковров 2</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка шерстяных ковров 2</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка ковров из вискозы 2</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка ковров из хлопка или шёлка 2</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Дополнительно 2</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="tab_item">
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка синтетических ковров 2</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка шерстяных ковров 2</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка ковров из вискозы 2</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка ковров из хлопка или шёлка 2</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Дополнительно 2</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
                         <!-- Матрасы -->
-                        <ul class="list_group">
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка синтетических ковров 3</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка шерстяных ковров 3</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка ковров из вискозы 3</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка ковров из хлопка или шёлка 3</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Дополнительно 3</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="tab_item">
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка синтетических ковров 3</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка шерстяных ковров 3</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка ковров из вискозы 3</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка ковров из хлопка или шёлка 3</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Дополнительно 3</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
                         <!-- Шторы и тюли -->
-                        <ul class="list_group">
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка синтетических ковров 4</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка шерстяных ковров 4</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка ковров из вискозы 4</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Химчистка ковров из хлопка или шёлка 4</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list_group_item">
-                                <a href="#">
-                                    <span>Дополнительно 4</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="tab_item">
+                            <ul class="list_group">
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка синтетических ковров 4</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка шерстяных ковров 4</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка ковров из вискозы 4</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Химчистка ковров из хлопка или шёлка 4</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list_group_item">
+                                    <a href="#">
+                                        <span>Дополнительно 4</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="#483C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
                     </div>
                 </div>
@@ -1209,9 +1220,13 @@
         <!-- jquery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- jquery -->
+        <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
         <!-- swiper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- swiper -->
+        <!-- select -->
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+        <!-- select -->
         <!-- main js -->
         <script src="./js/main.js"></script>
         <!-- main js -->

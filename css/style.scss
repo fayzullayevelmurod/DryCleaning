@@ -25,6 +25,7 @@ $border: #DCCFC6;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -572,10 +573,6 @@ button {
     }
 
     &_body {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
-
         p {
             color: rgba(6, 36, 51, 0.72);
             font-size: 18px;
@@ -751,12 +748,12 @@ button {
         position: absolute;
         z-index: -1;
         top: 52px;
-        right: -83px;
+        right: -375px;
     }
 
     .bg {
         position: absolute;
-        right: -83px;
+        right: -140px;
         top: 102px;
         z-index: -1;
     }
@@ -1339,6 +1336,10 @@ button {
         z-index: 1;
     }
 
+    .faq_in {
+        width: calc(100% - 528px - 72px);
+    }
+
     .main_title {
         margin-bottom: 32px;
     }
@@ -1842,6 +1843,10 @@ button {
             overflow: hidden;
             border-radius: 18px;
             border: 1px solid $border;
+        }
+
+        .list_group:not(:last-child) {
+            margin-bottom: 64px;
         }
 
         .list_group_item {
