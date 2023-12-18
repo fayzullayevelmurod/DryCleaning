@@ -325,6 +325,10 @@
         .faq_bg {
             display: none;
         }
+
+        .faq_in {
+            width: 100%;
+        }
     }
 
     .contact {
@@ -785,7 +789,7 @@
         }
     }
 
-    .comment_card_item__foot {
+    .reviews .comment_card_item__foot {
         .before {
             flex: 1;
         }

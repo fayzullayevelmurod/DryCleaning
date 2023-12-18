@@ -4,6 +4,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -454,11 +455,6 @@ button {
 .accordion_head:active span.icon svg {
   transform: rotateZ(180deg);
 }
-.accordion_body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
-}
 .accordion_body p {
   color: rgba(6, 36, 51, 0.72);
   font-size: 18px;
@@ -604,11 +600,11 @@ button {
   position: absolute;
   z-index: -1;
   top: 52px;
-  right: -83px;
+  right: -375px;
 }
 #home .bg {
   position: absolute;
-  right: -83px;
+  right: -140px;
   top: 102px;
   z-index: -1;
 }
@@ -1069,6 +1065,9 @@ button {
   position: relative;
   z-index: 1;
 }
+.faq .faq_in {
+  width: calc(100% - 528px - 72px);
+}
 .faq .main_title {
   margin-bottom: 32px;
 }
@@ -1487,6 +1486,9 @@ button {
   overflow: hidden;
   border-radius: 18px;
   border: 1px solid #DCCFC6;
+}
+.price .tab_body .list_group:not(:last-child) {
+  margin-bottom: 64px;
 }
 .price .tab_body .list_group_item {
   cursor: default;
@@ -3067,6 +3069,9 @@ button {
   .faq .faq_bg {
     display: none;
   }
+  .faq .faq_in {
+    width: 100%;
+  }
   .contact .main_container {
     margin-bottom: 90px;
     flex-direction: column;
@@ -3403,10 +3408,10 @@ button {
   .reviews .services_text_right .services_contact .address {
     margin-top: 14px;
   }
-  .comment_card_item__foot .before {
+  .reviews .comment_card_item__foot .before {
     flex: 1;
   }
-  .comment_card_item__foot .after {
+  .reviews .comment_card_item__foot .after {
     flex: 2;
   }
   .about .services_text {
