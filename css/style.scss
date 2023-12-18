@@ -1445,6 +1445,67 @@ button {
 
 // about page
 .about {
+    &_home {
+        .main_container {
+            position: relative;
+        }
+
+        .bg_1 {
+            position: absolute;
+            top: -90px;
+            left: 187px;
+            z-index: -1;
+        }
+
+        .bg_2 {
+            position: absolute;
+            left: 390px;
+            top: -210px;
+            z-index: -1;
+        }
+
+        .main_title {
+            margin-bottom: 200px;
+        }
+
+        p {
+            max-width: 600px;
+            color: #000;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            padding-bottom: 52px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .for_video {
+            position: absolute;
+            right: -375px;
+            bottom: 0;
+
+            &_in {
+                position: relative;
+            }
+            
+            &_bg {
+                position: relative;
+                z-index: -1;
+            }
+
+            .play {
+                position: absolute;
+                top: 413px;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        &_card {
+            margin-top: 0 !important;
+        }
+    }
+
     .services_text {
         margin: 120px 0;
         display: flex;
